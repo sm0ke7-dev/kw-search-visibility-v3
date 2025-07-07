@@ -1,0 +1,12 @@
+{
+  "name": "search-visibility-project",
+  "version": "1.0.0",
+  "description": "Node.js script for DataForSEO SERP API polling.",
+  "main": "dataforseo-serp.js",
+  "scripts": {
+    "start": "node dataforseo-serp.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.7"
+  }
+}
