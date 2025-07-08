@@ -1,0 +1,7 @@
+This is a dummy text file created to test git commit functionality.
+
+Date: $(Get-Date)
+User: Testing commit ability
+Purpose: Verify that changes can be committed to the repository
+
+This file can be safely deleted after testing is complete. 
