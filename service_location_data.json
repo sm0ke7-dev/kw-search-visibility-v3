@@ -1,0 +1,21 @@
+{
+    "Forth Worth":
+        {
+            "domain":"fort-worth.aacwildliferemoval.com",
+            "services":
+                [
+                    {
+                        "name":"raccoon removal",
+                        "keyword_list":["raccoon removal", "raccoon control", "raccoon removal services"]
+                    }
+                ],
+            "locations":
+                [
+                    {
+                        "name":"Southlake",
+                        "geo_coordinate":"32.81515191834728, -96.95462977267123"
+                    }
+                ]
+                
+        }
+}
