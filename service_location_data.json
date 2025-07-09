@@ -1,21 +1,121 @@
 {
-    "Forth Worth":
-        {
-            "domain":"fort-worth.aacwildliferemoval.com",
-            "services":
-                [
-                    {
-                        "name":"raccoon removal",
-                        "keyword_list":["raccoon removal", "raccoon control", "raccoon removal services"]
-                    }
-                ],
-            "locations":
-                [
-                    {
-                        "name":"Southlake",
-                        "geo_coordinate":"32.81515191834728, -96.95462977267123"
-                    }
-                ]
-                
-        }
+    "Fort Worth": {
+        "domain": "fort-worth.aaacwildliferemoval.com",
+        "services": [
+            {
+                "name": "raccoon removal",
+                "keyword_list": ["raccoon removal", "raccoon removal near me", "raccoon pest control", "raccoon in attic"]
+            },
+            {
+                "name": "squirrel removal",
+                "keyword_list": ["squirrel removal", "squirrel removal near me", "squirrel removal from attic", "squirrel trappers", "squirrels in attic removal cost", "squirrel in attic removal near me"]
+            },
+            {
+                "name": "bat removal",
+                "keyword_list": ["bat removal", "bat removal near me", "get rid of bats", "bat control", "bat exclusion"]
+            }
+        ],
+        "locations": [
+            {
+                "name": "White Settlement",
+                "geo_coordinate": "32.759575, -97.458351"
+            },
+            {
+                "name": "Watauga",
+                "geo_coordinate": "32.857906, -97.254738"
+            },
+            {
+                "name": "Trophy Club",
+                "geo_coordinate": "32.997901, -97.183625"
+            },
+            {
+                "name": "Southlake",
+                "geo_coordinate": "32.941236, -97.134178"
+            },
+            {
+                "name": "Saginaw",
+                "geo_coordinate": "32.8618, -97.3666"
+            },
+            {
+                "name": "Richland Hills",
+                "geo_coordinate": "32.81596, -97.22807"
+            },
+            {
+                "name": "North Richland Hills",
+                "geo_coordinate": "32.834295, -97.228903"
+            },
+            {
+                "name": "Mansfield",
+                "geo_coordinate": "32.563192, -97.141677"
+            },
+            {
+                "name": "Keller",
+                "geo_coordinate": "32.934189, -97.229298"
+            },
+            {
+                "name": "Hurst",
+                "geo_coordinate": "32.8235, -97.1706"
+            },
+            {
+                "name": "Haltom City",
+                "geo_coordinate": "32.799576, -97.269180"
+            },
+            {
+                "name": "Grapevine",
+                "geo_coordinate": "32.934292, -97.078065"
+            },
+            {
+                "name": "Granbury",
+                "geo_coordinate": "32.4385, -97.7755"
+            },
+            {
+                "name": "Frisco",
+                "geo_coordinate": "33.155373, -96.818733"
+            },
+            {
+                "name": "Flower Mound",
+                "geo_coordinate": "33.014568, -97.096954"
+            },
+            {
+                "name": "Euless",
+                "geo_coordinate": "32.8371, -97.0820"
+            },
+            {
+                "name": "Crowley",
+                "geo_coordinate": "32.579025, -97.362517"
+            },
+            {
+                "name": "Colleyville",
+                "geo_coordinate": "32.88096, -97.155012"
+            },
+            {
+                "name": "Cleburne",
+                "geo_coordinate": "32.347644, -97.386684"
+            },
+            {
+                "name": "Benbrook",
+                "geo_coordinate": "32.673188, -97.460576"
+            },
+            {
+                "name": "Bedford",
+                "geo_coordinate": "32.844017, -97.143067"
+            },
+            {
+                "name": "Argyle",
+                "geo_coordinate": "33.123753, -97.184547"
+            },
+            {
+                "name": "Arlington",
+                "geo_coordinate": "32.705002, -97.122780"
+            },
+            {
+                "name": "Lantana",
+                "geo_coordinate": "33.09073, -97.12416"
+            },
+            {
+                "name": "Westlake",
+                "geo_coordinate": "32.991013454433094, -97.19506056266617"
+            }
+        ]
+    }
 }

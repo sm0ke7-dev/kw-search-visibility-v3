@@ -1,10 +1,379 @@
 {
-    "Fort Worth":
-        [
-            {
-                "location":"Southlake",
-                "service":"raccoon removal",
-                "intended_url":"https://fort-worth.aacwildliferemoval.com/service-area/southlake/raccoon-removal/"
-            }
-        ]
+    "Fort Worth": [
+        {
+            "location": "White Settlement",
+            "service": "raccoon removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/white-settlement/raccoon-removal/"
+        },
+        {
+            "location": "White Settlement",
+            "service": "squirrel removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/white-settlement/squirrel-removal/"
+        },
+        {
+            "location": "White Settlement",
+            "service": "bat removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/white-settlement/bat-removal/"
+        },
+        {
+            "location": "Watauga",
+            "service": "raccoon removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/watauga/raccoon-removal/"
+        },
+        {
+            "location": "Watauga",
+            "service": "squirrel removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/watauga/squirrel-removal/"
+        },
+        {
+            "location": "Watauga",
+            "service": "bat removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/watauga/bat-removal/"
+        },
+        {
+            "location": "Trophy Club",
+            "service": "raccoon removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/trophy-club/raccoon-removal/"
+        },
+        {
+            "location": "Trophy Club",
+            "service": "squirrel removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/trophy-club/squirrel-removal/"
+        },
+        {
+            "location": "Trophy Club",
+            "service": "bat removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/trophy-club/bat-removal/"
+        },
+        {
+            "location": "Southlake",
+            "service": "raccoon removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/southlake/raccoon-removal/"
+        },
+        {
+            "location": "Southlake",
+            "service": "squirrel removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/southlake/squirrel-removal/"
+        },
+        {
+            "location": "Southlake",
+            "service": "bat removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/southlake/bat-removal/"
+        },
+        {
+            "location": "Saginaw",
+            "service": "raccoon removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/saginaw/raccoon-removal/"
+        },
+        {
+            "location": "Saginaw",
+            "service": "squirrel removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/saginaw/squirrel-removal/"
+        },
+        {
+            "location": "Saginaw",
+            "service": "bat removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/saginaw/bat-removal/"
+        },
+        {
+            "location": "Richland Hills",
+            "service": "raccoon removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/richland-hills/raccoon-removal/"
+        },
+        {
+            "location": "Richland Hills",
+            "service": "squirrel removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/richland-hills/squirrel-removal/"
+        },
+        {
+            "location": "Richland Hills",
+            "service": "bat removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/richland-hills/bat-removal/"
+        },
+        {
+            "location": "North Richland Hills",
+            "service": "raccoon removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/north-richland-hills/raccoon-removal/"
+        },
+        {
+            "location": "North Richland Hills",
+            "service": "squirrel removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/north-richland-hills/squirrel-removal/"
+        },
+        {
+            "location": "North Richland Hills",
+            "service": "bat removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/north-richland-hills/bat-removal/"
+        },
+        {
+            "location": "Mansfield",
+            "service": "raccoon removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/mansfield/raccoon-removal/"
+        },
+        {
+            "location": "Mansfield",
+            "service": "squirrel removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/mansfield/squirrel-removal/"
+        },
+        {
+            "location": "Mansfield",
+            "service": "bat removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/mansfield/bat-removal/"
+        },
+        {
+            "location": "Keller",
+            "service": "raccoon removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/keller/raccoon-removal/"
+        },
+        {
+            "location": "Keller",
+            "service": "squirrel removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/keller/squirrel-removal/"
+        },
+        {
+            "location": "Keller",
+            "service": "bat removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/keller/bat-removal/"
+        },
+        {
+            "location": "Hurst",
+            "service": "raccoon removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/hurst/raccoon-removal/"
+        },
+        {
+            "location": "Hurst",
+            "service": "squirrel removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/hurst/squirrel-removal/"
+        },
+        {
+            "location": "Hurst",
+            "service": "bat removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/hurst/bat-removal/"
+        },
+        {
+            "location": "Haltom City",
+            "service": "raccoon removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/haltom-city/raccoon-removal/"
+        },
+        {
+            "location": "Haltom City",
+            "service": "squirrel removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/haltom-city/squirrel-removal/"
+        },
+        {
+            "location": "Haltom City",
+            "service": "bat removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/haltom-city/bat-removal/"
+        },
+        {
+            "location": "Grapevine",
+            "service": "raccoon removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/grapevine/raccoon-removal/"
+        },
+        {
+            "location": "Grapevine",
+            "service": "squirrel removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/grapevine/squirrel-removal/"
+        },
+        {
+            "location": "Grapevine",
+            "service": "bat removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/grapevine/bat-removal/"
+        },
+        {
+            "location": "Granbury",
+            "service": "raccoon removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/granbury/raccoon-removal/"
+        },
+        {
+            "location": "Granbury",
+            "service": "squirrel removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/granbury/squirrel-removal/"
+        },
+        {
+            "location": "Granbury",
+            "service": "bat removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/granbury/bat-removal/"
+        },
+        {
+            "location": "Frisco",
+            "service": "raccoon removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/frisco/raccoon-removal/"
+        },
+        {
+            "location": "Frisco",
+            "service": "squirrel removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/frisco/squirrel-removal/"
+        },
+        {
+            "location": "Frisco",
+            "service": "bat removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/frisco/bat-removal/"
+        },
+        {
+            "location": "Flower Mound",
+            "service": "raccoon removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/flower-mound/raccoon-removal/"
+        },
+        {
+            "location": "Flower Mound",
+            "service": "squirrel removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/flower-mound/squirrel-removal/"
+        },
+        {
+            "location": "Flower Mound",
+            "service": "bat removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/flower-mound/bat-removal/"
+        },
+        {
+            "location": "Euless",
+            "service": "raccoon removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/euless/raccoon-removal/"
+        },
+        {
+            "location": "Euless",
+            "service": "squirrel removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/euless/squirrel-removal/"
+        },
+        {
+            "location": "Euless",
+            "service": "bat removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/euless/bat-removal/"
+        },
+        {
+            "location": "Crowley",
+            "service": "raccoon removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/crowley/raccoon-removal/"
+        },
+        {
+            "location": "Crowley",
+            "service": "squirrel removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/crowley/squirrel-removal/"
+        },
+        {
+            "location": "Crowley",
+            "service": "bat removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/crowley/bat-removal/"
+        },
+        {
+            "location": "Colleyville",
+            "service": "raccoon removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/colleyville/raccoon-removal/"
+        },
+        {
+            "location": "Colleyville",
+            "service": "squirrel removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/colleyville/squirrel-removal/"
+        },
+        {
+            "location": "Colleyville",
+            "service": "bat removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/colleyville/bat-removal/"
+        },
+        {
+            "location": "Cleburne",
+            "service": "raccoon removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/cleburne/raccoon-removal/"
+        },
+        {
+            "location": "Cleburne",
+            "service": "squirrel removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/cleburne/squirrel-removal/"
+        },
+        {
+            "location": "Cleburne",
+            "service": "bat removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/cleburne/bat-removal/"
+        },
+        {
+            "location": "Benbrook",
+            "service": "raccoon removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/benbrook/raccoon-removal/"
+        },
+        {
+            "location": "Benbrook",
+            "service": "squirrel removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/benbrook/squirrel-removal/"
+        },
+        {
+            "location": "Benbrook",
+            "service": "bat removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/benbrook/bat-removal/"
+        },
+        {
+            "location": "Bedford",
+            "service": "raccoon removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/bedford/raccoon-removal/"
+        },
+        {
+            "location": "Bedford",
+            "service": "squirrel removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/bedford/squirrel-removal/"
+        },
+        {
+            "location": "Bedford",
+            "service": "bat removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/bedford/bat-removal/"
+        },
+        {
+            "location": "Argyle",
+            "service": "raccoon removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/argyle/raccoon-removal/"
+        },
+        {
+            "location": "Argyle",
+            "service": "squirrel removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/argyle/squirrel-removal/"
+        },
+        {
+            "location": "Argyle",
+            "service": "bat removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/argyle/bat-removal/"
+        },
+        {
+            "location": "Arlington",
+            "service": "raccoon removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/arlington/raccoon-removal/"
+        },
+        {
+            "location": "Arlington",
+            "service": "squirrel removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/arlington/squirrel-removal/"
+        },
+        {
+            "location": "Arlington",
+            "service": "bat removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/arlington/bat-removal/"
+        },
+        {
+            "location": "Lantana",
+            "service": "raccoon removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/lantana/raccoon-removal/"
+        },
+        {
+            "location": "Lantana",
+            "service": "squirrel removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/lantana/squirrel-removal/"
+        },
+        {
+            "location": "Lantana",
+            "service": "bat removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/lantana/bat-removal/"
+        },
+        {
+            "location": "Westlake",
+            "service": "raccoon removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/westlake/raccoon-removal/"
+        },
+        {
+            "location": "Westlake",
+            "service": "squirrel removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/westlake/squirrel-removal/"
+        },
+        {
+            "location": "Westlake",
+            "service": "bat removal",
+            "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/westlake/bat-removal/"
+        }
+    ]
 }
