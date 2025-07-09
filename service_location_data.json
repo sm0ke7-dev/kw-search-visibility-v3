@@ -117,5 +117,104 @@
                 "geo_coordinate": "32.991013454433094, -97.19506056266617"
             }
         ]
-    }
+    },
+    "Dallas": {
+    "domain": "https://dallas.aaacwildliferemoval.com/",
+    "services": [
+      {
+        "name": "raccoon removal",
+        "keyword_list": ["raccoon removal", "raccoon removal near me", "raccoon pest control", "raccoon in attic", "raccoon exterminator"]
+      },
+      {
+        "name": "squirrel removal",
+        "keyword_list": ["squirrel removal", "squirrel removal near me", "squirrel removal from attic", "squirrel trappers", "squirrel in attic removal near me"]
+      },
+      {
+        "name": "bat removal",
+        "keyword_list": ["bat removal", "bat removal near me", "get rid of bats", "bat control", "bat exclusion"]
+      }
+    ],
+    "locations": [
+      {
+        "name": "Sunnyvale",
+        "geo_coordinate": "32.796517, -96.560824"
+      },
+      {
+        "name": "Cedar Hill",
+        "geo_coordinate": "32.588469, -96.956115"
+      },
+      {
+        "name": "Highland Park",
+        "geo_coordinate": "32.833462, -96.791946"
+      },
+      {
+        "name": "Rowlett",
+        "geo_coordinate": "32.9029, -96.5639"
+      },
+      {
+        "name": "Richardson",
+        "geo_coordinate": "32.965557, -96.715836"
+      },
+      {
+        "name": "Irving",
+        "geo_coordinate": "32.819595, -96.945419"
+      },
+      {
+        "name": "Garland",
+        "geo_coordinate": "32.9043, -96.6345"
+      },
+      {
+        "name": "Farmers Branch",
+        "geo_coordinate": "32.926514, -96.896115"
+      },
+      {
+        "name": "DeSoto",
+        "geo_coordinate": "32.589806, -96.856972"
+      },
+      {
+        "name": "Carrollton",
+        "geo_coordinate": "32.9537, -96.8903"
+      },
+      {
+        "name": "Mesquite",
+        "geo_coordinate": "32.766796, -96.599159"
+      },
+      {
+        "name": "University Park",
+        "geo_coordinate": "32.855038, -96.797592"
+      },
+      {
+        "name": "Sachse",
+        "geo_coordinate": "32.9764, -96.5861"
+      },
+      {
+        "name": "Rockwall",
+        "geo_coordinate": "32.9187, -96.4558"
+      },
+      {
+        "name": "Lancaster",
+        "geo_coordinate": "32.5921, -96.7561"
+      },
+      {
+        "name": "Grand Prairie",
+        "geo_coordinate": "32.74596, -96.99778"
+      },
+      {
+        "name": "Fate",
+        "geo_coordinate": "32.939707, -96.386753"
+      },
+      {
+        "name": "Duncanville",
+        "geo_coordinate": "32.6518, -96.9083"
+      },
+      {
+        "name": "Coppell",
+        "geo_coordinate": "32.9546, -97.0150"
+      },
+      {
+        "name": "Addison",
+        "geo_coordinate": "32.961798, -96.829784"
+      }
+    ]
+  }
 }
