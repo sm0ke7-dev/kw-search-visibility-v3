@@ -1,6 +1,7 @@
 {
     "Fort Worth": {
         "domain": "fort-worth.aaacwildliferemoval.com",
+        "brand": "aaac wildlife removal of fort worth",
         "services": [
             {
                 "name": "raccoon removal",
@@ -120,6 +121,7 @@
     },
     "Dallas": {
     "domain": "https://dallas.aaacwildliferemoval.com/",
+    "brand": "aaac wildlife removal of fort worth",
     "services": [
       {
         "name": "raccoon removal",
