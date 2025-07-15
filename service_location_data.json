@@ -121,7 +121,7 @@
     },
     "Dallas": {
     "domain": "https://dallas.aaacwildliferemoval.com/",
-    "brand": "aaac wildlife removal of fort worth",
+    "brand": "aaac wildlife removal of dallas",
     "services": [
       {
         "name": "raccoon removal",
@@ -219,398 +219,166 @@
       }
     ]
   },
-  "Collin County": [
-    {
-      "location": "Frisco",
-      "service": "raccoon removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/frisco/raccoon-removal/"
-    },
-    {
-      "location": "Frisco",
-      "service": "squirrel removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/frisco/squirrel-removal/"
-    },
-    {
-      "location": "Frisco",
-      "service": "rodent removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/frisco/rodent-removal/"
-    },
-    {
-      "location": "Wylie",
-      "service": "raccoon removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/wylie/raccoon-removal/"
-    },
-    {
-      "location": "Wylie",
-      "service": "squirrel removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/wylie/squirrel-removal/"
-    },
-    {
-      "location": "Wylie",
-      "service": "rodent removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/wylie/rodent-removal/"
-    },
-    {
-      "location": "Prosper",
-      "service": "raccoon removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/prosper/raccoon-removal/"
-    },
-    {
-      "location": "Prosper",
-      "service": "squirrel removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/prosper/squirrel-removal/"
-    },
-    {
-      "location": "Prosper",
-      "service": "rodent removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/prosper/rodent-removal/"
-    },
-    {
-      "location": "Princeton",
-      "service": "raccoon removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/princeton/raccoon-removal/"
-    },
-    {
-      "location": "Princeton",
-      "service": "squirrel removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/princeton/squirrel-removal/"
-    },
-    {
-      "location": "Princeton",
-      "service": "rodent removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/princeton/rodent-removal/"
-    },
-    {
-      "location": "Plano",
-      "service": "raccoon removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/plano/raccoon-removal/"
-    },
-    {
-      "location": "Plano",
-      "service": "squirrel removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/plano/squirrel-removal/"
-    },
-    {
-      "location": "Plano",
-      "service": "rodent removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/plano/rodent-removal/"
-    },
-    {
-      "location": "Parker",
-      "service": "raccoon removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/parker/raccoon-removal/"
-    },
-    {
-      "location": "Parker",
-      "service": "squirrel removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/parker/squirrel-removal/"
-    },
-    {
-      "location": "Parker",
-      "service": "rodent removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/parker/rodent-removal/"
-    },
-    {
-      "location": "Murphy",
-      "service": "raccoon removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/murphy/raccoon-removal/"
-    },
-    {
-      "location": "Murphy",
-      "service": "squirrel removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/murphy/squirrel-removal/"
-    },
-    {
-      "location": "Murphy",
-      "service": "rodent removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/murphy/rodent-removal/"
-    },
-    {
-      "location": "Melissa",
-      "service": "raccoon removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/melissa/raccoon-removal/"
-    },
-    {
-      "location": "Melissa",
-      "service": "squirrel removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/melissa/squirrel-removal/"
-    },
-    {
-      "location": "Melissa",
-      "service": "rodent removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/melissa/rodent-removal/"
-    },
-    {
-      "location": "McKinney",
-      "service": "raccoon removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/mckinney/raccoon-removal/"
-    },
-    {
-      "location": "McKinney",
-      "service": "squirrel removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/mckinney/squirrel-removal/"
-    },
-    {
-      "location": "McKinney",
-      "service": "rodent removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/mckinney/rodent-removal/"
-    },
-    {
-      "location": "Lucas",
-      "service": "raccoon removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/lucas/raccoon-removal/"
-    },
-    {
-      "location": "Lucas",
-      "service": "squirrel removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/lucas/squirrel-removal/"
-    },
-    {
-      "location": "Lucas",
-      "service": "rodent removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/lucas/rodent-removal/"
-    },
-    {
-      "location": "Lavon",
-      "service": "raccoon removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/lavon/raccoon-removal/"
-    },
-    {
-      "location": "Lavon",
-      "service": "squirrel removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/lavon/squirrel-removal/"
-    },
-    {
-      "location": "Lavon",
-      "service": "rodent removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/lavon/rodent-removal/"
-    },
-    {
-      "location": "Farmersville",
-      "service": "raccoon removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/farmersville/raccoon-removal/"
-    },
-    {
-      "location": "Farmersville",
-      "service": "squirrel removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/farmersville/squirrel-removal/"
-    },
-    {
-      "location": "Farmersville",
-      "service": "rodent removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/farmersville/rodent-removal/"
-    },
-    {
-      "location": "Fairview",
-      "service": "raccoon removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/fairview/raccoon-removal/"
-    },
-    {
-      "location": "Fairview",
-      "service": "squirrel removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/fairview/squirrel-removal/"
-    },
-    {
-      "location": "Fairview",
-      "service": "rodent removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/fairview/rodent-removal/"
-    },
-    {
-      "location": "Celina",
-      "service": "raccoon removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/celina/raccoon-removal/"
-    },
-    {
-      "location": "Celina",
-      "service": "squirrel removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/celina/squirrel-removal/"
-    },
-    {
-      "location": "Celina",
-      "service": "rodent removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/celina/rodent-removal/"
-    },
-    {
-      "location": "Anna",
-      "service": "raccoon removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/anna/raccoon-removal/"
-    },
-    {
-      "location": "Anna",
-      "service": "squirrel removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/anna/squirrel-removal/"
-    },
-    {
-      "location": "Anna",
-      "service": "rodent removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/anna/rodent-removal/"
-    },
-    {
-      "location": "Killeen",
-      "service": "raccoon removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/killeen/raccoon-removal/"
-    },
-    {
-      "location": "Killeen",
-      "service": "squirrel removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/killeen/squirrel-removal/"
-    },
-    {
-      "location": "Killeen",
-      "service": "rodent removal",
-      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/killeen/rodent-removal/"
-    }
-  ],
-  "Rockwall": [
-    {
-      "location": "Forney",
-      "service": "raccoon removal",
-      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/forney/raccoon-removal/"
-    },
-    {
-      "location": "Forney",
-      "service": "squirrel removal",
-      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/forney/squirrel-removal/"
-    },
-    {
-      "location": "Forney",
-      "service": "bat removal",
-      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/forney/bat-removal/"
-    },
-    {
-      "location": "Royse City",
-      "service": "raccoon removal",
-      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/royse-city/raccoon-removal/"
-    },
-    {
-      "location": "Royse City",
-      "service": "squirrel removal",
-      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/royse-city/squirrel-removal/"
-    },
-    {
-      "location": "Royse City",
-      "service": "bat removal",
-      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/royse-city/bat-removal/"
-    },
-    {
-      "location": "Rockwall",
-      "service": "raccoon removal",
-      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/rockwall/raccoon-removal/"
-    },
-    {
-      "location": "Rockwall",
-      "service": "squirrel removal",
-      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/rockwall/squirrel-removal/"
-    },
-    {
-      "location": "Rockwall",
-      "service": "bat removal",
-      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/rockwall/bat-removal/"
-    },
-    {
-      "location": "Munson",
-      "service": "raccoon removal",
-      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/munson/raccoon-removal/"
-    },
-    {
-      "location": "Munson",
-      "service": "squirrel removal",
-      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/munson/squirrel-removal/"
-    },
-    {
-      "location": "Munson",
-      "service": "bat removal",
-      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/munson/bat-removal/"
-    },
-    {
-      "location": "Mobile City",
-      "service": "raccoon removal",
-      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/mobile-city/raccoon-removal/"
-    },
-    {
-      "location": "Mobile City",
-      "service": "squirrel removal",
-      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/mobile-city/squirrel-removal/"
-    },
-    {
-      "location": "Mobile City",
-      "service": "bat removal",
-      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/mobile-city/bat-removal/"
-    },
-    {
-      "location": "McLendon-Chisholm",
-      "service": "raccoon removal",
-      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/mclendon-chisholm/raccoon-removal/"
-    },
-    {
-      "location": "McLendon-Chisholm",
-      "service": "squirrel removal",
-      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/mclendon-chisholm/squirrel-removal/"
-    },
-    {
-      "location": "McLendon-Chisholm",
-      "service": "bat removal",
-      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/mclendon-chisholm/bat-removal/"
-    },
-    {
-      "location": "Heath",
-      "service": "raccoon removal",
-      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/heath/raccoon-removal/"
-    },
-    {
-      "location": "Heath",
-      "service": "squirrel removal",
-      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/heath/squirrel-removal/"
-    },
-    {
-      "location": "Heath",
-      "service": "bat removal",
-      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/heath/bat-removal/"
-    },
-    {
-      "location": "Glen Hill",
-      "service": "raccoon removal",
-      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/glen-hill/raccoon-removal/"
-    },
-    {
-      "location": "Glen Hill",
-      "service": "squirrel removal",
-      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/glen-hill/squirrel-removal/"
-    },
-    {
-      "location": "Glen Hill",
-      "service": "bat removal",
-      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/glen-hill/bat-removal/"
-    },
-    {
-      "location": "Fate",
-      "service": "raccoon removal",
-      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/fate/raccoon-removal/"
-    },
-    {
-      "location": "Fate",
-      "service": "squirrel removal",
-      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/fate/squirrel-removal/"
-    },
-    {
-      "location": "Fate",
-      "service": "bat removal",
-      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/fate/bat-removal/"
-    },
-    {
-      "location": "Blackland",
-      "service": "raccoon removal",
-      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/blackland/raccoon-removal/"
-    },
-    {
-      "location": "Blackland",
-      "service": "squirrel removal",
-      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/blackland/squirrel-removal/"
-    },
-    {
-      "location": "Blackland",
-      "service": "bat removal",
-      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/blackland/bat-removal/"
-    }
-  ]
+  "Collin-County": {
+    "domain": "collin-county.aaacwildliferemoval.com",
+    "brand": "aaac wildlife removal of collin county",
+    "services": [
+      {
+        "name": "raccoon removal",
+        "keyword_list": [
+          "raccoon in attic",
+          "raccoon trappers",
+          "raccoon removal",
+          "raccoon exterminator",
+          "raccoon in attic removal"
+        ]
+      },
+      {
+        "name": "squirrel removal",
+        "keyword_list": [
+          "squirrel removal near me",
+          "squirrel removal",
+          "squirrel pest control",
+          "squirrel exterminator",
+          "squirrel pest removal"
+        ]
+      },
+      {
+        "name": "rodent removal",
+        "keyword_list": [
+          "pest and rodent control near me",
+          "rodent removal",
+          "remove rodents",
+          "rodent control",
+          "rodent exterminator"
+        ]
+      }
+    ],
+    "locations": [
+      {
+        "name": "Frisco",
+        "geo_coordinate": "33.1507, -96.8236"
+      },
+      {
+        "name": "Wylie",
+        "geo_coordinate": "33.0151, -96.5389"
+      },
+      {
+        "name": "Prosper",
+        "geo_coordinate": "33.2458, -96.8408"
+      },
+      {
+        "name": "Princeton",
+        "geo_coordinate": "33.1845, -96.5094"
+      },
+      {
+        "name": "Plano",
+        "geo_coordinate": "33.0198, -96.6989"
+      },
+      {
+        "name": "Parker",
+        "geo_coordinate": "33.0569, -96.6213"
+      },
+      {
+        "name": "Murphy",
+        "geo_coordinate": "33.0308, -96.6131"
+      },
+      {
+        "name": "Melissa",
+        "geo_coordinate": "33.2835, -96.5719"
+      },
+      {
+        "name": "McKinney",
+        "geo_coordinate": "33.1976, -96.6398"
+      },
+      {
+        "name": "Lucas",
+        "geo_coordinate": "33.1108, -96.5761"
+      },
+      {
+        "name": "Lavon",
+        "geo_coordinate": "33.0276, -96.4342"
+      },
+      {
+        "name": "Farmersville",
+        "geo_coordinate": "33.1641, -96.3667"
+      },
+      {
+        "name": "Fairview",
+        "geo_coordinate": "33.1579, -96.6317"
+      },
+      {
+        "name": "Celina",
+        "geo_coordinate": "33.3258, -96.7764"
+      },
+      {
+        "name": "Anna",
+        "geo_coordinate": "33.3490, -96.5486"
+      },
+      {
+        "name": "Killeen",
+        "geo_coordinate": "31.1171, -97.7278"
+      }
+    ]
+  },
+  "Rockwall": {
+    "domain": "rockwall.aaacwildliferemoval.com",
+    "brand": "aaac wildlife removal of rockwall",
+    "services": [
+      {
+        "name": "raccoon removal",
+        "keyword_list": ["Raccoon Removal", "Raccoon Removal Near Me", "Raccoon Pest Control", "Raccoon In Attic", "Raccoon Exterminator"]
+      },
+      {
+        "name": "squirrel removal",
+        "keyword_list": ["Squirrel Removal", "Squirrel Removal Near Me", "Squirrel Removal From Attic", "Squirrel Trappers", "Squirrels In Attic Removal Cost", "Squirrel In Attic Removal Near Me"]
+      },
+      {
+        "name": "bat removal",
+        "keyword_list": ["Bat Removal", "Bat Removal Near Me", "Get Rid Of Bats", "Bat Control", "Bat Exclusion"]
+      }
+    ],
+    "locations": [
+      { 
+        "name": "Forney",              
+        "geo_coordinate": "32.75194, -96.45583" 
+      },
+      { 
+        "name": "Royse City",         
+        "geo_coordinate": "32.99194, -96.29722" 
+      },
+      { 
+        "name": "Rockwall",           
+        "geo_coordinate": "32.91694, -96.43750" 
+      },
+      { 
+        "name": "Munson",             
+        "geo_coordinate": "32.89667, -96.29806" 
+      },
+      { 
+        "name": "Mobile City",        
+        "geo_coordinate": "32.92250, -96.41083" 
+      },
+      { 
+        "name": "McLendon-Chisholm",  
+        "geo_coordinate": "32.84611, -96.39000"
+      },
+      { 
+        "name": "Heath",              
+        "geo_coordinate": "32.84778, -96.47833" 
+      },
+      { 
+        "name": "Glen Hill",          
+        "geo_coordinate": "32.89472, -96.47417"
+      },
+      { 
+        "name": "Fate",               
+        "geo_coordinate": "32.94139, -96.38111" 
+      },
+      { 
+        "name": "Blackland",          
+        "geo_coordinate": "32.89944, -96.34944" 
+      }
+    ]
+  }
 }
