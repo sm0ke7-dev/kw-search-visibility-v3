@@ -102,26 +102,36 @@ async function getSerpResults(taskId, config) {
 }
 
 /**
- * Extracts ranking data from SERP results
+ * Extracts ranking data from SERP results, filtering for aaacwildliferemoval.com domain
  * @param {Array} serpResults - Raw SERP results from DataForSEO
- * @returns {Array} Array of ranking objects with rank and URL
+ * @returns {Array} Array of ranking objects with rank and URL (only for our domain)
  */
 function extractRankingData(serpResults) {
   const rankings = [];
+  let totalResults = 0;
+  let ourDomainResults = 0;
   
   for (const result of serpResults) {
     if (result.items && Array.isArray(result.items)) {
       for (const item of result.items) {
         // Look for organic results with rank_group and url
         if (item.type === "organic" && item.rank_group && item.url) {
-          rankings.push({
-            rank: item.rank_group,
-            url: item.url
-          });
+          totalResults++;
+          
+          // Filter for our domain (any subdomain of aaacwildliferemoval.com)
+          if (item.url.includes('aaacwildliferemoval.com')) {
+            rankings.push({
+              rank: item.rank_group,
+              url: item.url
+            });
+            ourDomainResults++;
+          }
         }
       }
     }
   }
+  
+  console.log(`📊 Found ${totalResults} total results, ${ourDomainResults} from our domain`);
   
   return rankings;
 }
