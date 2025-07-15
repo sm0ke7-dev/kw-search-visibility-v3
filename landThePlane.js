@@ -4,11 +4,13 @@ const path = require('path');
 
 /**
  * Lands the plane by processing completed DataForSEO tasks and extracting SERP results
- * @param {Object} takeOffData - The Take Off JSON object containing task IDs
  * @param {Object} dataForSeoConfig - Configuration object containing Authorization token
  * @returns {Array} Array of keyword results with rankings and URLs
  */
-async function landThePlane(takeOffData, dataForSeoConfig) {
+async function landThePlane(dataForSeoConfig) {
+  // Read the Take Off JSON file
+  const takeOffData = JSON.parse(fs.readFileSync(path.join(__dirname, 'takeoff-output.json'), 'utf-8'));
+  console.log('📖 Loaded Take Off data from file');
   const results = [];
 
   // Process each location
@@ -122,6 +124,36 @@ function extractRankingData(serpResults) {
   }
   
   return rankings;
+}
+
+// Run landing if this file is executed directly
+if (require.main === module) {
+  // Read DataForSEO configuration
+  const dataForSeoConfig = JSON.parse(fs.readFileSync(path.join(__dirname, 'data_for_seo.json'), 'utf-8'));
+  
+  // Landing phase execution
+  async function landing() {
+    try {
+      console.log('🛬 Starting LANDING phase...');
+      
+      // Check if takeoff file exists
+      if (!fs.existsSync(path.join(__dirname, 'takeoff-output.json'))) {
+        console.error('❌ No takeoff-output.json found. Please run takeoff phase first.');
+        return;
+      }
+      
+      // Land the plane and get SERP results
+      const serpResults = await landThePlane(dataForSeoConfig);
+      fs.writeFileSync(path.join(__dirname, 'landing-results.json'), JSON.stringify(serpResults, null, 2));
+      console.log('✅ LANDING COMPLETE! SERP results written to landing-results.json');
+      
+    } catch (error) {
+      console.error('Error in landing phase:', error);
+    }
+  }
+  
+  // Run landing
+  landing();
 }
 
 module.exports = landThePlane; 

@@ -3,12 +3,14 @@ const fs = require('fs');
 const path = require('path');
 
 /**
- * Builds Take Off JSON object based on PreFlight data
- * @param {Object} preFlight - The PreFlight object containing location and item data
+ * Builds Take Off JSON object based on PreFlight data from file
  * @param {Object} dataForSeoConfig - Configuration object containing Authorization token
  * @returns {Object} Take Off JSON object
  */
-async function buildTakeOff(preFlight, dataForSeoConfig) {
+async function buildTakeOff(dataForSeoConfig) {
+  // Read the PreFlight JSON file
+  const preFlight = JSON.parse(fs.readFileSync(path.join(__dirname, 'pre-flight-output.json'), 'utf-8'));
+  console.log('📖 Loaded PreFlight data from file');
   const takeOffObject = {};
 
   // Step 1: Iterate for each in PreFlight (e.g., "Fort Worth")
@@ -86,6 +88,37 @@ async function buildTakeOff(preFlight, dataForSeoConfig) {
   }
 
   return takeOffObject;
+}
+
+// Run takeoff if this file is executed directly
+if (require.main === module) {
+  // Read DataForSEO configuration
+  const dataForSeoConfig = JSON.parse(fs.readFileSync(path.join(__dirname, 'data_for_seo.json'), 'utf-8'));
+  
+  // Takeoff phase execution
+  async function takeoff() {
+    try {
+      console.log('🚀 Starting TAKEOFF phase...');
+      
+      // Check if preflight file exists
+      if (!fs.existsSync(path.join(__dirname, 'pre-flight-output.json'))) {
+        console.error('❌ No pre-flight-output.json found. Please run preflight phase first.');
+        return;
+      }
+      
+      // Build and write Take Off JSON
+      const takeOffObject = await buildTakeOff(dataForSeoConfig);
+      fs.writeFileSync(path.join(__dirname, 'takeoff-output.json'), JSON.stringify(takeOffObject, null, 2));
+      console.log('✅ TAKEOFF COMPLETE! Take Off JSON written to takeoff-output.json');
+      console.log('⏳ Tasks submitted to DataForSEO. Wait for completion before running landing phase.');
+      
+    } catch (error) {
+      console.error('Error in takeoff phase:', error);
+    }
+  }
+  
+  // Run takeoff
+  takeoff();
 }
 
 module.exports = buildTakeOff; 

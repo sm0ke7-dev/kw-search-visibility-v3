@@ -1,3 +1,6 @@
+const fs = require('fs');
+const path = require('path');
+
 const buildPreflight = ({ rankingPages, serviceLocationData, placeholders }) => {
   const output = {};
 
@@ -34,5 +37,34 @@ const buildPreflight = ({ rankingPages, serviceLocationData, placeholders }) => 
   }
   return output;
 };
+
+// Run preflight if this file is executed directly
+if (require.main === module) {
+  // Load data files
+  const rankingPages = JSON.parse(fs.readFileSync(path.join(__dirname, 'ranking_pages.json'), 'utf-8'));
+  const serviceLocationData = JSON.parse(fs.readFileSync(path.join(__dirname, 'service_location_data.json'), 'utf-8'));
+  const placeholders = JSON.parse(fs.readFileSync(path.join(__dirname, 'placeholder.json'), 'utf-8'));
+  
+  // Preflight phase execution
+  async function preflight() {
+    try {
+      console.log('📋 Starting PREFLIGHT phase...');
+      
+      // Build PreFlight data
+      const preFlight = buildPreflight({ rankingPages, serviceLocationData, placeholders });
+      
+      // Write PreFlight output
+      fs.writeFileSync(path.join(__dirname, 'pre-flight-output.json'), JSON.stringify(preFlight, null, 2));
+      console.log('✅ PREFLIGHT COMPLETE! PreFlight output written to pre-flight-output.json');
+      console.log('🚀 Ready for takeoff phase.');
+      
+    } catch (error) {
+      console.error('Error in preflight phase:', error);
+    }
+  }
+  
+  // Run preflight
+  preflight();
+}
 
 module.exports = buildPreflight; 
