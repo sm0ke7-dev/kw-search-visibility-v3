@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const buildPreflight = require('./buildPreflight');
 const buildTakeOff = require('./buildTakeOff');
+const landThePlane = require('./landThePlane');
 
 const topDomain = "aaacwildliferemoval.com";
 const rankingPages = JSON.parse(fs.readFileSync(path.join(__dirname, 'ranking_pages.json'), 'utf-8'));
@@ -24,6 +25,12 @@ async function main() {
     const takeOffObject = await buildTakeOff(preFlight, dataForSeoConfig);
     fs.writeFileSync(path.join(__dirname, 'takeoff-output.json'), JSON.stringify(takeOffObject, null, 2));
     console.log('Take Off JSON written to takeoff-output.json');
+
+    // Land the plane and get SERP results
+    console.log('🛬 Starting landing sequence...');
+    const serpResults = await landThePlane(takeOffObject, dataForSeoConfig);
+    fs.writeFileSync(path.join(__dirname, 'landing-results.json'), JSON.stringify(serpResults, null, 2));
+    console.log('✅ Plane landed successfully! SERP results written to landing-results.json');
     
   } catch (error) {
     console.error('Error in main execution:', error);
