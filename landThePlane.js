@@ -5,22 +5,28 @@ const path = require('path');
 /**
  * Lands the plane by processing completed DataForSEO tasks and extracting SERP results
  * @param {Object} dataForSeoConfig - Configuration object containing Authorization token
- * @returns {Array} Array of keyword results with rankings and URLs
+ * @returns {Object} Object with same structure as takeoff-output.json but with ranking data instead of task IDs
  */
 async function landThePlane(dataForSeoConfig) {
   // Read the Take Off JSON file
   const takeOffData = JSON.parse(fs.readFileSync(path.join(__dirname, 'takeoff-output.json'), 'utf-8'));
   console.log('📖 Loaded Take Off data from file');
-  const results = [];
+  
+  // Initialize results with same structure as takeoff-output.json
+  const results = {};
 
   // Process each location
   for (const [location, items] of Object.entries(takeOffData)) {
     console.log(`Processing results for location: ${location}`);
+    results[location] = [];
     
     // Process each item within the location
     for (const item of items) {
       const { service, keywords } = item;
       console.log(`Processing ${service} results...`);
+      
+      // Create new item with same structure
+      const newItem = { service, keywords: {} };
 
       // Process each keyword
       for (const [keyword, keywordData] of Object.entries(keywords)) {
@@ -37,23 +43,39 @@ async function landThePlane(dataForSeoConfig) {
               // Extract ranking data
               const rankingData = extractRankingData(serpResults);
               
-              // Add to results in the desired format
-              results.push({
-                [keyword]: rankingData
-              });
+              // Add ranking data to keywords object (replacing task_id/status)
+              newItem.keywords[keyword] = {
+                status: "completed",
+                rankings: rankingData
+              };
               
               console.log(`✅ Successfully processed "${keyword}" - found ${rankingData.length} results`);
             } else {
               console.log(`⚠️ No results found for keyword: "${keyword}"`);
+              newItem.keywords[keyword] = {
+                status: "completed",
+                rankings: []
+              }; // Empty array for no results
             }
             
           } catch (error) {
             console.log(`❌ Error processing keyword "${keyword}": ${error.message}`);
+            newItem.keywords[keyword] = {
+              status: "error",
+              rankings: []
+            }; // Empty array for errors
           }
         } else {
           console.log(`⚠️ Skipping keyword "${keyword}" - status: ${status}`);
+          newItem.keywords[keyword] = {
+            status: "skipped",
+            rankings: []
+          }; // Empty array for skipped keywords
         }
       }
+      
+      // Add the processed item to the location
+      results[location].push(newItem);
     }
   }
 
