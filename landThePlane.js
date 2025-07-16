@@ -12,25 +12,41 @@ async function landThePlane(dataForSeoConfig) {
   const takeOffData = JSON.parse(fs.readFileSync(path.join(__dirname, 'takeoff-output.json'), 'utf-8'));
   console.log('📖 Loaded Take Off data from file');
   
-  // Initialize results with same structure as takeoff-output.json
-  const results = {};
-
+  // Load existing checkpoint if available
+  const results = loadCheckpoint(takeOffData);
+  const totalKeywords = countTotalKeywords(takeOffData);
+  let processedCount = countProcessedKeywords(results);
+  
+  console.log(`🔄 Starting landing phase - ${processedCount}/${totalKeywords} keywords already processed`);
+  
   // Process each location
   for (const [location, items] of Object.entries(takeOffData)) {
     console.log(`Processing results for location: ${location}`);
-    results[location] = [];
+    
+    if (!results[location]) {
+      results[location] = [];
+    }
     
     // Process each item within the location
     for (const item of items) {
       const { service, keywords } = item;
       console.log(`Processing ${service} results...`);
       
-      // Create new item with same structure
-      const newItem = { service, keywords: {} };
+      // Find existing item or create new one
+      let newItem = results[location].find(existing => existing.service === service);
+      if (!newItem) {
+        newItem = { service, keywords: {} };
+        results[location].push(newItem);
+      }
 
       // Process each keyword
       for (const [keyword, keywordData] of Object.entries(keywords)) {
         const { task_id, status } = keywordData;
+        
+        // Skip if already completed
+        if (newItem.keywords[keyword] && newItem.keywords[keyword].status === "completed") {
+          continue;
+        }
         
         if (status === "submitted" && task_id) {
           console.log(`Checking results for keyword: "${keyword}" (Task ID: ${task_id})`);
@@ -43,7 +59,7 @@ async function landThePlane(dataForSeoConfig) {
               // Extract ranking data
               const rankingData = extractRankingData(serpResults);
               
-              // Add ranking data to keywords object (replacing task_id/status)
+              // Add ranking data to keywords object
               newItem.keywords[keyword] = {
                 status: "completed",
                 rankings: rankingData
@@ -55,7 +71,7 @@ async function landThePlane(dataForSeoConfig) {
               newItem.keywords[keyword] = {
                 status: "completed",
                 rankings: []
-              }; // Empty array for no results
+              };
             }
             
           } catch (error) {
@@ -63,23 +79,108 @@ async function landThePlane(dataForSeoConfig) {
             newItem.keywords[keyword] = {
               status: "error",
               rankings: []
-            }; // Empty array for errors
+            };
           }
+          
+          processedCount++;
+          
+          // Save checkpoint every 20 keywords
+          if (processedCount % 20 === 0) {
+            saveCheckpoint(results, processedCount, totalKeywords);
+          }
+          
         } else {
           console.log(`⚠️ Skipping keyword "${keyword}" - status: ${status}`);
           newItem.keywords[keyword] = {
             status: "skipped",
             rankings: []
-          }; // Empty array for skipped keywords
+          };
+          processedCount++;
         }
       }
-      
-      // Add the processed item to the location
-      results[location].push(newItem);
     }
   }
 
+  // Final save
+  saveCheckpoint(results, processedCount, totalKeywords);
+  console.log(`🎉 Landing complete! Processed ${processedCount}/${totalKeywords} keywords`);
+  
   return results;
+}
+
+/**
+ * Loads existing checkpoint data if available
+ * @param {Object} takeOffData - Original takeoff data structure
+ * @returns {Object} Merged results with existing checkpoint data
+ */
+function loadCheckpoint(takeOffData) {
+  const checkpointPath = path.join(__dirname, 'landing-results.json');
+  
+  if (fs.existsSync(checkpointPath)) {
+    try {
+      const existingResults = JSON.parse(fs.readFileSync(checkpointPath, 'utf-8'));
+      console.log('📂 Found existing checkpoint - resuming from previous state');
+      return existingResults;
+    } catch (error) {
+      console.log('⚠️ Error reading checkpoint, starting fresh');
+    }
+  }
+  
+  // Initialize empty structure matching takeoff data
+  const results = {};
+  for (const [location, items] of Object.entries(takeOffData)) {
+    results[location] = [];
+  }
+  
+  return results;
+}
+
+/**
+ * Saves current progress to checkpoint file
+ * @param {Object} results - Current results data
+ * @param {number} processedCount - Number of keywords processed
+ * @param {number} totalKeywords - Total number of keywords
+ */
+function saveCheckpoint(results, processedCount, totalKeywords) {
+  const checkpointPath = path.join(__dirname, 'landing-results.json');
+  fs.writeFileSync(checkpointPath, JSON.stringify(results, null, 2));
+  
+  const percentage = ((processedCount / totalKeywords) * 100).toFixed(1);
+  console.log(`💾 Checkpoint saved: ${processedCount}/${totalKeywords} keywords (${percentage}%)`);
+}
+
+/**
+ * Counts total keywords in takeoff data
+ * @param {Object} takeOffData - Takeoff data structure
+ * @returns {number} Total keyword count
+ */
+function countTotalKeywords(takeOffData) {
+  let count = 0;
+  for (const [location, items] of Object.entries(takeOffData)) {
+    for (const item of items) {
+      count += Object.keys(item.keywords).length;
+    }
+  }
+  return count;
+}
+
+/**
+ * Counts already processed keywords in results
+ * @param {Object} results - Current results data
+ * @returns {number} Count of completed keywords
+ */
+function countProcessedKeywords(results) {
+  let count = 0;
+  for (const [location, items] of Object.entries(results)) {
+    for (const item of items) {
+      for (const [keyword, keywordData] of Object.entries(item.keywords)) {
+        if (keywordData.status === "completed") {
+          count++;
+        }
+      }
+    }
+  }
+  return count;
 }
 
 /**

@@ -110,6 +110,13 @@ Input Data → Preflight → Takeoff → Landing → Results
 - Status tracking for each keyword
 - Empty arrays for failed/skipped keywords
 
+### Checkpointing & Resume Capability
+- **Automatic checkpointing**: Saves progress every 20 keywords processed
+- **Resume functionality**: Can restart from where it left off if interrupted
+- **Progress tracking**: Shows percentage completion and keyword counts
+- **Fault tolerance**: Internet breaks, API errors, or crashes won't lose progress
+- **Status-based resuming**: Skips already "completed" keywords on restart
+
 ## Usage Instructions
 
 ### Running the Full Pipeline
@@ -172,11 +179,13 @@ node landThePlane.js
 2. **API errors**: Check DataForSEO credentials and rate limits
 3. **No results**: Verify domain filtering logic
 4. **Timeout errors**: Increase maxAttempts in landThePlane.js
+5. **Interrupted processing**: Simply restart - will resume from checkpoint
 
 ### Debug Mode
 - Each phase logs detailed progress
 - Console output shows processing status
 - Error messages include specific failure reasons
+- Checkpoint progress: "💾 Checkpoint saved: 40/150 keywords (26.7%)"
 
 ## Future Enhancements
 - Support for multiple domains
