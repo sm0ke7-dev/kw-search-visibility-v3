@@ -84,6 +84,10 @@ async function landThePlane(dataForSeoConfig) {
           
           processedCount++;
           
+          // Display progress for every keyword
+          const percentage = ((processedCount / totalKeywords) * 100).toFixed(1);
+          console.log(`📊 Progress: ${processedCount}/${totalKeywords} keywords (${percentage}%)`);
+          
           // Save checkpoint every 20 keywords
           if (processedCount % 20 === 0) {
             saveCheckpoint(results, processedCount, totalKeywords);
@@ -96,6 +100,10 @@ async function landThePlane(dataForSeoConfig) {
             rankings: []
           };
           processedCount++;
+          
+          // Display progress for skipped keywords too
+          const percentage = ((processedCount / totalKeywords) * 100).toFixed(1);
+          console.log(`📊 Progress: ${processedCount}/${totalKeywords} keywords (${percentage}%)`);
         }
       }
     }
