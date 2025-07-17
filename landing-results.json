@@ -1,7 +1,10 @@
 {
   "Fort Worth": [
     {
+      "location": "White Settlement",
       "service": "raccoon removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/white-settlement/raccoon-removal/",
+      "geo_coordinate": "32.759575, -97.458351",
       "keywords": {
         "raccoon removal": {
           "status": "completed",
@@ -2674,7 +2677,10 @@
       }
     },
     {
+      "location": "White Settlement",
       "service": "squirrel removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/white-settlement/squirrel-removal/",
+      "geo_coordinate": "32.759575, -97.458351",
       "keywords": {
         "squirrel removal": {
           "status": "completed",
@@ -6673,7 +6679,10 @@
       }
     },
     {
+      "location": "White Settlement",
       "service": "bat removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/white-settlement/bat-removal/",
+      "geo_coordinate": "32.759575, -97.458351",
       "keywords": {
         "bat removal": {
           "status": "completed",
@@ -9970,11 +9979,518 @@
           ]
         }
       }
+    },
+    {
+      "location": "Watauga",
+      "service": "raccoon removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/watauga/raccoon-removal/",
+      "geo_coordinate": "32.857906, -97.254738",
+      "keywords": {}
+    },
+    {
+      "location": "Watauga",
+      "service": "squirrel removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/watauga/squirrel-removal/",
+      "geo_coordinate": "32.857906, -97.254738",
+      "keywords": {}
+    },
+    {
+      "location": "Watauga",
+      "service": "bat removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/watauga/bat-removal/",
+      "geo_coordinate": "32.857906, -97.254738",
+      "keywords": {}
+    },
+    {
+      "location": "Trophy Club",
+      "service": "raccoon removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/trophy-club/raccoon-removal/",
+      "geo_coordinate": "32.997901, -97.183625",
+      "keywords": {}
+    },
+    {
+      "location": "Trophy Club",
+      "service": "squirrel removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/trophy-club/squirrel-removal/",
+      "geo_coordinate": "32.997901, -97.183625",
+      "keywords": {}
+    },
+    {
+      "location": "Trophy Club",
+      "service": "bat removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/trophy-club/bat-removal/",
+      "geo_coordinate": "32.997901, -97.183625",
+      "keywords": {}
+    },
+    {
+      "location": "Southlake",
+      "service": "raccoon removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/southlake/raccoon-removal/",
+      "geo_coordinate": "32.941236, -97.134178",
+      "keywords": {}
+    },
+    {
+      "location": "Southlake",
+      "service": "squirrel removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/southlake/squirrel-removal/",
+      "geo_coordinate": "32.941236, -97.134178",
+      "keywords": {}
+    },
+    {
+      "location": "Southlake",
+      "service": "bat removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/southlake/bat-removal/",
+      "geo_coordinate": "32.941236, -97.134178",
+      "keywords": {}
+    },
+    {
+      "location": "Saginaw",
+      "service": "raccoon removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/saginaw/raccoon-removal/",
+      "geo_coordinate": "32.8618, -97.3666",
+      "keywords": {}
+    },
+    {
+      "location": "Saginaw",
+      "service": "squirrel removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/saginaw/squirrel-removal/",
+      "geo_coordinate": "32.8618, -97.3666",
+      "keywords": {}
+    },
+    {
+      "location": "Saginaw",
+      "service": "bat removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/saginaw/bat-removal/",
+      "geo_coordinate": "32.8618, -97.3666",
+      "keywords": {}
+    },
+    {
+      "location": "Richland Hills",
+      "service": "raccoon removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/richland-hills/raccoon-removal/",
+      "geo_coordinate": "32.81596, -97.22807",
+      "keywords": {}
+    },
+    {
+      "location": "Richland Hills",
+      "service": "squirrel removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/richland-hills/squirrel-removal/",
+      "geo_coordinate": "32.81596, -97.22807",
+      "keywords": {}
+    },
+    {
+      "location": "Richland Hills",
+      "service": "bat removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/richland-hills/bat-removal/",
+      "geo_coordinate": "32.81596, -97.22807",
+      "keywords": {}
+    },
+    {
+      "location": "North Richland Hills",
+      "service": "raccoon removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/north-richland-hills/raccoon-removal/",
+      "geo_coordinate": "32.834295, -97.228903",
+      "keywords": {}
+    },
+    {
+      "location": "North Richland Hills",
+      "service": "squirrel removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/north-richland-hills/squirrel-removal/",
+      "geo_coordinate": "32.834295, -97.228903",
+      "keywords": {}
+    },
+    {
+      "location": "North Richland Hills",
+      "service": "bat removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/north-richland-hills/bat-removal/",
+      "geo_coordinate": "32.834295, -97.228903",
+      "keywords": {}
+    },
+    {
+      "location": "Mansfield",
+      "service": "raccoon removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/mansfield/raccoon-removal/",
+      "geo_coordinate": "32.563192, -97.141677",
+      "keywords": {}
+    },
+    {
+      "location": "Mansfield",
+      "service": "squirrel removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/mansfield/squirrel-removal/",
+      "geo_coordinate": "32.563192, -97.141677",
+      "keywords": {}
+    },
+    {
+      "location": "Mansfield",
+      "service": "bat removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/mansfield/bat-removal/",
+      "geo_coordinate": "32.563192, -97.141677",
+      "keywords": {}
+    },
+    {
+      "location": "Keller",
+      "service": "raccoon removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/keller/raccoon-removal/",
+      "geo_coordinate": "32.934189, -97.229298",
+      "keywords": {}
+    },
+    {
+      "location": "Keller",
+      "service": "squirrel removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/keller/squirrel-removal/",
+      "geo_coordinate": "32.934189, -97.229298",
+      "keywords": {}
+    },
+    {
+      "location": "Keller",
+      "service": "bat removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/keller/bat-removal/",
+      "geo_coordinate": "32.934189, -97.229298",
+      "keywords": {}
+    },
+    {
+      "location": "Hurst",
+      "service": "raccoon removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/hurst/raccoon-removal/",
+      "geo_coordinate": "32.8235, -97.1706",
+      "keywords": {}
+    },
+    {
+      "location": "Hurst",
+      "service": "squirrel removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/hurst/squirrel-removal/",
+      "geo_coordinate": "32.8235, -97.1706",
+      "keywords": {}
+    },
+    {
+      "location": "Hurst",
+      "service": "bat removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/hurst/bat-removal/",
+      "geo_coordinate": "32.8235, -97.1706",
+      "keywords": {}
+    },
+    {
+      "location": "Haltom City",
+      "service": "raccoon removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/haltom-city/raccoon-removal/",
+      "geo_coordinate": "32.799576, -97.269180",
+      "keywords": {}
+    },
+    {
+      "location": "Haltom City",
+      "service": "squirrel removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/haltom-city/squirrel-removal/",
+      "geo_coordinate": "32.799576, -97.269180",
+      "keywords": {}
+    },
+    {
+      "location": "Haltom City",
+      "service": "bat removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/haltom-city/bat-removal/",
+      "geo_coordinate": "32.799576, -97.269180",
+      "keywords": {}
+    },
+    {
+      "location": "Grapevine",
+      "service": "raccoon removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/grapevine/raccoon-removal/",
+      "geo_coordinate": "32.934292, -97.078065",
+      "keywords": {}
+    },
+    {
+      "location": "Grapevine",
+      "service": "squirrel removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/grapevine/squirrel-removal/",
+      "geo_coordinate": "32.934292, -97.078065",
+      "keywords": {}
+    },
+    {
+      "location": "Grapevine",
+      "service": "bat removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/grapevine/bat-removal/",
+      "geo_coordinate": "32.934292, -97.078065",
+      "keywords": {}
+    },
+    {
+      "location": "Granbury",
+      "service": "raccoon removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/granbury/raccoon-removal/",
+      "geo_coordinate": "32.4385, -97.7755",
+      "keywords": {}
+    },
+    {
+      "location": "Granbury",
+      "service": "squirrel removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/granbury/squirrel-removal/",
+      "geo_coordinate": "32.4385, -97.7755",
+      "keywords": {}
+    },
+    {
+      "location": "Granbury",
+      "service": "bat removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/granbury/bat-removal/",
+      "geo_coordinate": "32.4385, -97.7755",
+      "keywords": {}
+    },
+    {
+      "location": "Frisco",
+      "service": "raccoon removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/frisco/raccoon-removal/",
+      "geo_coordinate": "33.155373, -96.818733",
+      "keywords": {}
+    },
+    {
+      "location": "Frisco",
+      "service": "squirrel removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/frisco/squirrel-removal/",
+      "geo_coordinate": "33.155373, -96.818733",
+      "keywords": {}
+    },
+    {
+      "location": "Frisco",
+      "service": "bat removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/frisco/bat-removal/",
+      "geo_coordinate": "33.155373, -96.818733",
+      "keywords": {}
+    },
+    {
+      "location": "Flower Mound",
+      "service": "raccoon removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/flower-mound/raccoon-removal/",
+      "geo_coordinate": "33.014568, -97.096954",
+      "keywords": {}
+    },
+    {
+      "location": "Flower Mound",
+      "service": "squirrel removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/flower-mound/squirrel-removal/",
+      "geo_coordinate": "33.014568, -97.096954",
+      "keywords": {}
+    },
+    {
+      "location": "Flower Mound",
+      "service": "bat removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/flower-mound/bat-removal/",
+      "geo_coordinate": "33.014568, -97.096954",
+      "keywords": {}
+    },
+    {
+      "location": "Euless",
+      "service": "raccoon removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/euless/raccoon-removal/",
+      "geo_coordinate": "32.8371, -97.0820",
+      "keywords": {}
+    },
+    {
+      "location": "Euless",
+      "service": "squirrel removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/euless/squirrel-removal/",
+      "geo_coordinate": "32.8371, -97.0820",
+      "keywords": {}
+    },
+    {
+      "location": "Euless",
+      "service": "bat removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/euless/bat-removal/",
+      "geo_coordinate": "32.8371, -97.0820",
+      "keywords": {}
+    },
+    {
+      "location": "Crowley",
+      "service": "raccoon removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/crowley/raccoon-removal/",
+      "geo_coordinate": "32.579025, -97.362517",
+      "keywords": {}
+    },
+    {
+      "location": "Crowley",
+      "service": "squirrel removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/crowley/squirrel-removal/",
+      "geo_coordinate": "32.579025, -97.362517",
+      "keywords": {}
+    },
+    {
+      "location": "Crowley",
+      "service": "bat removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/crowley/bat-removal/",
+      "geo_coordinate": "32.579025, -97.362517",
+      "keywords": {}
+    },
+    {
+      "location": "Colleyville",
+      "service": "raccoon removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/colleyville/raccoon-removal/",
+      "geo_coordinate": "32.88096, -97.155012",
+      "keywords": {}
+    },
+    {
+      "location": "Colleyville",
+      "service": "squirrel removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/colleyville/squirrel-removal/",
+      "geo_coordinate": "32.88096, -97.155012",
+      "keywords": {}
+    },
+    {
+      "location": "Colleyville",
+      "service": "bat removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/colleyville/bat-removal/",
+      "geo_coordinate": "32.88096, -97.155012",
+      "keywords": {}
+    },
+    {
+      "location": "Cleburne",
+      "service": "raccoon removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/cleburne/raccoon-removal/",
+      "geo_coordinate": "32.347644, -97.386684",
+      "keywords": {}
+    },
+    {
+      "location": "Cleburne",
+      "service": "squirrel removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/cleburne/squirrel-removal/",
+      "geo_coordinate": "32.347644, -97.386684",
+      "keywords": {}
+    },
+    {
+      "location": "Cleburne",
+      "service": "bat removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/cleburne/bat-removal/",
+      "geo_coordinate": "32.347644, -97.386684",
+      "keywords": {}
+    },
+    {
+      "location": "Benbrook",
+      "service": "raccoon removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/benbrook/raccoon-removal/",
+      "geo_coordinate": "32.673188, -97.460576",
+      "keywords": {}
+    },
+    {
+      "location": "Benbrook",
+      "service": "squirrel removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/benbrook/squirrel-removal/",
+      "geo_coordinate": "32.673188, -97.460576",
+      "keywords": {}
+    },
+    {
+      "location": "Benbrook",
+      "service": "bat removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/benbrook/bat-removal/",
+      "geo_coordinate": "32.673188, -97.460576",
+      "keywords": {}
+    },
+    {
+      "location": "Bedford",
+      "service": "raccoon removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/bedford/raccoon-removal/",
+      "geo_coordinate": "32.844017, -97.143067",
+      "keywords": {}
+    },
+    {
+      "location": "Bedford",
+      "service": "squirrel removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/bedford/squirrel-removal/",
+      "geo_coordinate": "32.844017, -97.143067",
+      "keywords": {}
+    },
+    {
+      "location": "Bedford",
+      "service": "bat removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/bedford/bat-removal/",
+      "geo_coordinate": "32.844017, -97.143067",
+      "keywords": {}
+    },
+    {
+      "location": "Argyle",
+      "service": "raccoon removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/argyle/raccoon-removal/",
+      "geo_coordinate": "33.123753, -97.184547",
+      "keywords": {}
+    },
+    {
+      "location": "Argyle",
+      "service": "squirrel removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/argyle/squirrel-removal/",
+      "geo_coordinate": "33.123753, -97.184547",
+      "keywords": {}
+    },
+    {
+      "location": "Argyle",
+      "service": "bat removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/argyle/bat-removal/",
+      "geo_coordinate": "33.123753, -97.184547",
+      "keywords": {}
+    },
+    {
+      "location": "Arlington",
+      "service": "raccoon removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/arlington/raccoon-removal/",
+      "geo_coordinate": "32.705002, -97.122780",
+      "keywords": {}
+    },
+    {
+      "location": "Arlington",
+      "service": "squirrel removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/arlington/squirrel-removal/",
+      "geo_coordinate": "32.705002, -97.122780",
+      "keywords": {}
+    },
+    {
+      "location": "Arlington",
+      "service": "bat removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/arlington/bat-removal/",
+      "geo_coordinate": "32.705002, -97.122780",
+      "keywords": {}
+    },
+    {
+      "location": "Lantana",
+      "service": "raccoon removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/lantana/raccoon-removal/",
+      "geo_coordinate": "33.09073, -97.12416",
+      "keywords": {}
+    },
+    {
+      "location": "Lantana",
+      "service": "squirrel removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/lantana/squirrel-removal/",
+      "geo_coordinate": "33.09073, -97.12416",
+      "keywords": {}
+    },
+    {
+      "location": "Lantana",
+      "service": "bat removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/lantana/bat-removal/",
+      "geo_coordinate": "33.09073, -97.12416",
+      "keywords": {}
+    },
+    {
+      "location": "Westlake",
+      "service": "raccoon removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/westlake/raccoon-removal/",
+      "geo_coordinate": "32.991013454433094, -97.19506056266617",
+      "keywords": {}
+    },
+    {
+      "location": "Westlake",
+      "service": "squirrel removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/westlake/squirrel-removal/",
+      "geo_coordinate": "32.991013454433094, -97.19506056266617",
+      "keywords": {}
+    },
+    {
+      "location": "Westlake",
+      "service": "bat removal",
+      "intended_url": "https://fort-worth.aaacwildliferemoval.com/service-area/westlake/bat-removal/",
+      "geo_coordinate": "32.991013454433094, -97.19506056266617",
+      "keywords": {}
     }
   ],
   "Dallas": [
     {
+      "location": "Sunnyvale",
       "service": "raccoon removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/sunnyvale/raccoon-removal/",
+      "geo_coordinate": "32.796517, -96.560824",
       "keywords": {
         "raccoon removal": {
           "status": "completed",
@@ -12339,7 +12855,10 @@
       }
     },
     {
+      "location": "Sunnyvale",
       "service": "squirrel removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/sunnyvale/squirrel-removal/",
+      "geo_coordinate": "32.796517, -96.560824",
       "keywords": {
         "squirrel removal": {
           "status": "completed",
@@ -14706,7 +15225,10 @@
       }
     },
     {
+      "location": "Sunnyvale",
       "service": "bat removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/sunnyvale/bat-removal/",
+      "geo_coordinate": "32.796517, -96.560824",
       "keywords": {
         "bat removal": {
           "status": "completed",
@@ -17063,11 +17585,392 @@
           ]
         }
       }
+    },
+    {
+      "location": "Cedar Hill",
+      "service": "raccoon removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/cedar-hill/raccoon-removal/",
+      "geo_coordinate": "32.588469, -96.956115",
+      "keywords": {}
+    },
+    {
+      "location": "Cedar Hill",
+      "service": "squirrel removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/cedar-hill/squirrel-removal/",
+      "geo_coordinate": "32.588469, -96.956115",
+      "keywords": {}
+    },
+    {
+      "location": "Cedar Hill",
+      "service": "bat removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/cedar-hill/bat-removal/",
+      "geo_coordinate": "32.588469, -96.956115",
+      "keywords": {}
+    },
+    {
+      "location": "Highland Park",
+      "service": "raccoon removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/highland-park/raccoon-removal/",
+      "geo_coordinate": "32.833462, -96.791946",
+      "keywords": {}
+    },
+    {
+      "location": "Highland Park",
+      "service": "squirrel removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/highland-park/squirrel-removal/",
+      "geo_coordinate": "32.833462, -96.791946",
+      "keywords": {}
+    },
+    {
+      "location": "Highland Park",
+      "service": "bat removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/highland-park/bat-removal/",
+      "geo_coordinate": "32.833462, -96.791946",
+      "keywords": {}
+    },
+    {
+      "location": "Rowlett",
+      "service": "raccoon removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/rowlett/raccoon-removal/",
+      "geo_coordinate": "32.9029, -96.5639",
+      "keywords": {}
+    },
+    {
+      "location": "Rowlett",
+      "service": "squirrel removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/rowlett/squirrel-removal/",
+      "geo_coordinate": "32.9029, -96.5639",
+      "keywords": {}
+    },
+    {
+      "location": "Rowlett",
+      "service": "bat removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/rowlett/bat-removal/",
+      "geo_coordinate": "32.9029, -96.5639",
+      "keywords": {}
+    },
+    {
+      "location": "Richardson",
+      "service": "raccoon removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/richardson/raccoon-removal/",
+      "geo_coordinate": "32.965557, -96.715836",
+      "keywords": {}
+    },
+    {
+      "location": "Richardson",
+      "service": "squirrel removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/richardson/squirrel-removal/",
+      "geo_coordinate": "32.965557, -96.715836",
+      "keywords": {}
+    },
+    {
+      "location": "Richardson",
+      "service": "bat removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/richardson/bat-removal/",
+      "geo_coordinate": "32.965557, -96.715836",
+      "keywords": {}
+    },
+    {
+      "location": "Irving",
+      "service": "raccoon removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/irving/raccoon-removal/",
+      "geo_coordinate": "32.819595, -96.945419",
+      "keywords": {}
+    },
+    {
+      "location": "Irving",
+      "service": "squirrel removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/irving/squirrel-removal/",
+      "geo_coordinate": "32.819595, -96.945419",
+      "keywords": {}
+    },
+    {
+      "location": "Irving",
+      "service": "bat removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/irving/bat-removal/",
+      "geo_coordinate": "32.819595, -96.945419",
+      "keywords": {}
+    },
+    {
+      "location": "Garland",
+      "service": "raccoon removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/garland/raccoon-removal/",
+      "geo_coordinate": "32.9043, -96.6345",
+      "keywords": {}
+    },
+    {
+      "location": "Garland",
+      "service": "squirrel removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/garland/squirrel-removal/",
+      "geo_coordinate": "32.9043, -96.6345",
+      "keywords": {}
+    },
+    {
+      "location": "Garland",
+      "service": "bat removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/garland/bat-removal/",
+      "geo_coordinate": "32.9043, -96.6345",
+      "keywords": {}
+    },
+    {
+      "location": "Farmers Branch",
+      "service": "raccoon removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/farmers-branch/raccoon-removal/",
+      "geo_coordinate": "32.926514, -96.896115",
+      "keywords": {}
+    },
+    {
+      "location": "Farmers Branch",
+      "service": "squirrel removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/farmers-branch/squirrel-removal/",
+      "geo_coordinate": "32.926514, -96.896115",
+      "keywords": {}
+    },
+    {
+      "location": "Farmers Branch",
+      "service": "bat removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/farmers-branch/bat-removal/",
+      "geo_coordinate": "32.926514, -96.896115",
+      "keywords": {}
+    },
+    {
+      "location": "DeSoto",
+      "service": "raccoon removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/desoto/raccoon-removal/",
+      "geo_coordinate": "32.589806, -96.856972",
+      "keywords": {}
+    },
+    {
+      "location": "DeSoto",
+      "service": "squirrel removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/desoto/squirrel-removal/",
+      "geo_coordinate": "32.589806, -96.856972",
+      "keywords": {}
+    },
+    {
+      "location": "DeSoto",
+      "service": "bat removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/desoto/bat-removal/",
+      "geo_coordinate": "32.589806, -96.856972",
+      "keywords": {}
+    },
+    {
+      "location": "Carrollton",
+      "service": "raccoon removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/carrollton/raccoon-removal/",
+      "geo_coordinate": "32.9537, -96.8903",
+      "keywords": {}
+    },
+    {
+      "location": "Carrollton",
+      "service": "squirrel removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/carrollton/squirrel-removal/",
+      "geo_coordinate": "32.9537, -96.8903",
+      "keywords": {}
+    },
+    {
+      "location": "Carrollton",
+      "service": "bat removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/carrollton/bat-removal/",
+      "geo_coordinate": "32.9537, -96.8903",
+      "keywords": {}
+    },
+    {
+      "location": "Mesquite",
+      "service": "raccoon removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/mesquite/raccoon-removal/",
+      "geo_coordinate": "32.766796, -96.599159",
+      "keywords": {}
+    },
+    {
+      "location": "Mesquite",
+      "service": "squirrel removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/mesquite/squirrel-removal/",
+      "geo_coordinate": "32.766796, -96.599159",
+      "keywords": {}
+    },
+    {
+      "location": "Mesquite",
+      "service": "bat removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/mesquite/bat-removal/",
+      "geo_coordinate": "32.766796, -96.599159",
+      "keywords": {}
+    },
+    {
+      "location": "University Park",
+      "service": "raccoon removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/university-park/raccoon-removal/",
+      "geo_coordinate": "32.855038, -96.797592",
+      "keywords": {}
+    },
+    {
+      "location": "University Park",
+      "service": "squirrel removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/university-park/squirrel-removal/",
+      "geo_coordinate": "32.855038, -96.797592",
+      "keywords": {}
+    },
+    {
+      "location": "University Park",
+      "service": "bat removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/university-park/bat-removal/",
+      "geo_coordinate": "32.855038, -96.797592",
+      "keywords": {}
+    },
+    {
+      "location": "Sachse",
+      "service": "raccoon removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/sachse/raccoon-removal/",
+      "geo_coordinate": "32.9764, -96.5861",
+      "keywords": {}
+    },
+    {
+      "location": "Sachse",
+      "service": "squirrel removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/sachse/squirrel-removal/",
+      "geo_coordinate": "32.9764, -96.5861",
+      "keywords": {}
+    },
+    {
+      "location": "Sachse",
+      "service": "bat removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/sachse/bat-removal/",
+      "geo_coordinate": "32.9764, -96.5861",
+      "keywords": {}
+    },
+    {
+      "location": "Lancaster",
+      "service": "raccoon removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/lancaster/raccoon-removal/",
+      "geo_coordinate": "32.5921, -96.7561",
+      "keywords": {}
+    },
+    {
+      "location": "Lancaster",
+      "service": "squirrel removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/lancaster/squirrel-removal/",
+      "geo_coordinate": "32.5921, -96.7561",
+      "keywords": {}
+    },
+    {
+      "location": "Lancaster",
+      "service": "bat removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/lancaster/bat-removal/",
+      "geo_coordinate": "32.5921, -96.7561",
+      "keywords": {}
+    },
+    {
+      "location": "Grand Prairie",
+      "service": "raccoon removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/grand-prairie/raccoon-removal/",
+      "geo_coordinate": "32.74596, -96.99778",
+      "keywords": {}
+    },
+    {
+      "location": "Grand Prairie",
+      "service": "squirrel removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/grand-prairie/squirrel-removal/",
+      "geo_coordinate": "32.74596, -96.99778",
+      "keywords": {}
+    },
+    {
+      "location": "Grand Prairie",
+      "service": "bat removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/grand-prairie/bat-removal/",
+      "geo_coordinate": "32.74596, -96.99778",
+      "keywords": {}
+    },
+    {
+      "location": "Fate",
+      "service": "raccoon removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/fate/raccoon-removal/",
+      "geo_coordinate": "32.939707, -96.386753",
+      "keywords": {}
+    },
+    {
+      "location": "Fate",
+      "service": "squirrel removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/fate/squirrel-removal/",
+      "geo_coordinate": "32.939707, -96.386753",
+      "keywords": {}
+    },
+    {
+      "location": "Fate",
+      "service": "bat removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/fate/bat-removal/",
+      "geo_coordinate": "32.939707, -96.386753",
+      "keywords": {}
+    },
+    {
+      "location": "Duncanville",
+      "service": "raccoon removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/duncanville/raccoon-removal/",
+      "geo_coordinate": "32.6518, -96.9083",
+      "keywords": {}
+    },
+    {
+      "location": "Duncanville",
+      "service": "squirrel removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/duncanville/squirrel-removal/",
+      "geo_coordinate": "32.6518, -96.9083",
+      "keywords": {}
+    },
+    {
+      "location": "Duncanville",
+      "service": "bat removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/duncanville/bat-removal/",
+      "geo_coordinate": "32.6518, -96.9083",
+      "keywords": {}
+    },
+    {
+      "location": "Coppell",
+      "service": "raccoon removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/coppell/raccoon-removal/",
+      "geo_coordinate": "32.9546, -97.0150",
+      "keywords": {}
+    },
+    {
+      "location": "Coppell",
+      "service": "squirrel removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/coppell/squirrel-removal/",
+      "geo_coordinate": "32.9546, -97.0150",
+      "keywords": {}
+    },
+    {
+      "location": "Coppell",
+      "service": "bat removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/coppell/bat-removal/",
+      "geo_coordinate": "32.9546, -97.0150",
+      "keywords": {}
+    },
+    {
+      "location": "Addison",
+      "service": "raccoon removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/addison/raccoon-removal/",
+      "geo_coordinate": "32.961798, -96.829784",
+      "keywords": {}
+    },
+    {
+      "location": "Addison",
+      "service": "squirrel removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/addison/squirrel-removal/",
+      "geo_coordinate": "32.961798, -96.829784",
+      "keywords": {}
+    },
+    {
+      "location": "Addison",
+      "service": "bat removal",
+      "intended_url": "https://dallas.aaacwildliferemoval.com/service-area/addison/bat-removal/",
+      "geo_coordinate": "32.961798, -96.829784",
+      "keywords": {}
     }
   ],
   "Collin-County": [
     {
+      "location": "Frisco",
       "service": "raccoon removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/frisco/raccoon-removal/",
+      "geo_coordinate": "33.1507, -96.8236",
       "keywords": {
         "raccoon in attic": {
           "status": "completed",
@@ -19217,7 +20120,10 @@
       }
     },
     {
+      "location": "Frisco",
       "service": "squirrel removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/frisco/squirrel-removal/",
+      "geo_coordinate": "33.1507, -96.8236",
       "keywords": {
         "squirrel removal near me": {
           "status": "completed",
@@ -21363,7 +22269,10 @@
       }
     },
     {
+      "location": "Frisco",
       "service": "rodent removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/frisco/rodent-removal/",
+      "geo_coordinate": "33.1507, -96.8236",
       "keywords": {
         "pest and rodent control near me": {
           "status": "completed",
@@ -23204,11 +24113,329 @@
           ]
         }
       }
+    },
+    {
+      "location": "Wylie",
+      "service": "raccoon removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/wylie/raccoon-removal/",
+      "geo_coordinate": "33.0151, -96.5389",
+      "keywords": {}
+    },
+    {
+      "location": "Wylie",
+      "service": "squirrel removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/wylie/squirrel-removal/",
+      "geo_coordinate": "33.0151, -96.5389",
+      "keywords": {}
+    },
+    {
+      "location": "Wylie",
+      "service": "rodent removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/wylie/rodent-removal/",
+      "geo_coordinate": "33.0151, -96.5389",
+      "keywords": {}
+    },
+    {
+      "location": "Prosper",
+      "service": "raccoon removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/prosper/raccoon-removal/",
+      "geo_coordinate": "33.2458, -96.8408",
+      "keywords": {}
+    },
+    {
+      "location": "Prosper",
+      "service": "squirrel removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/prosper/squirrel-removal/",
+      "geo_coordinate": "33.2458, -96.8408",
+      "keywords": {}
+    },
+    {
+      "location": "Prosper",
+      "service": "rodent removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/prosper/rodent-removal/",
+      "geo_coordinate": "33.2458, -96.8408",
+      "keywords": {}
+    },
+    {
+      "location": "Princeton",
+      "service": "raccoon removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/princeton/raccoon-removal/",
+      "geo_coordinate": "33.1845, -96.5094",
+      "keywords": {}
+    },
+    {
+      "location": "Princeton",
+      "service": "squirrel removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/princeton/squirrel-removal/",
+      "geo_coordinate": "33.1845, -96.5094",
+      "keywords": {}
+    },
+    {
+      "location": "Princeton",
+      "service": "rodent removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/princeton/rodent-removal/",
+      "geo_coordinate": "33.1845, -96.5094",
+      "keywords": {}
+    },
+    {
+      "location": "Plano",
+      "service": "raccoon removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/plano/raccoon-removal/",
+      "geo_coordinate": "33.0198, -96.6989",
+      "keywords": {}
+    },
+    {
+      "location": "Plano",
+      "service": "squirrel removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/plano/squirrel-removal/",
+      "geo_coordinate": "33.0198, -96.6989",
+      "keywords": {}
+    },
+    {
+      "location": "Plano",
+      "service": "rodent removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/plano/rodent-removal/",
+      "geo_coordinate": "33.0198, -96.6989",
+      "keywords": {}
+    },
+    {
+      "location": "Parker",
+      "service": "raccoon removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/parker/raccoon-removal/",
+      "geo_coordinate": "33.0569, -96.6213",
+      "keywords": {}
+    },
+    {
+      "location": "Parker",
+      "service": "squirrel removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/parker/squirrel-removal/",
+      "geo_coordinate": "33.0569, -96.6213",
+      "keywords": {}
+    },
+    {
+      "location": "Parker",
+      "service": "rodent removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/parker/rodent-removal/",
+      "geo_coordinate": "33.0569, -96.6213",
+      "keywords": {}
+    },
+    {
+      "location": "Murphy",
+      "service": "raccoon removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/murphy/raccoon-removal/",
+      "geo_coordinate": "33.0308, -96.6131",
+      "keywords": {}
+    },
+    {
+      "location": "Murphy",
+      "service": "squirrel removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/murphy/squirrel-removal/",
+      "geo_coordinate": "33.0308, -96.6131",
+      "keywords": {}
+    },
+    {
+      "location": "Murphy",
+      "service": "rodent removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/murphy/rodent-removal/",
+      "geo_coordinate": "33.0308, -96.6131",
+      "keywords": {}
+    },
+    {
+      "location": "Melissa",
+      "service": "raccoon removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/melissa/raccoon-removal/",
+      "geo_coordinate": "33.2835, -96.5719",
+      "keywords": {}
+    },
+    {
+      "location": "Melissa",
+      "service": "squirrel removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/melissa/squirrel-removal/",
+      "geo_coordinate": "33.2835, -96.5719",
+      "keywords": {}
+    },
+    {
+      "location": "Melissa",
+      "service": "rodent removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/melissa/rodent-removal/",
+      "geo_coordinate": "33.2835, -96.5719",
+      "keywords": {}
+    },
+    {
+      "location": "McKinney",
+      "service": "raccoon removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/mckinney/raccoon-removal/",
+      "geo_coordinate": "33.1976, -96.6398",
+      "keywords": {}
+    },
+    {
+      "location": "McKinney",
+      "service": "squirrel removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/mckinney/squirrel-removal/",
+      "geo_coordinate": "33.1976, -96.6398",
+      "keywords": {}
+    },
+    {
+      "location": "McKinney",
+      "service": "rodent removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/mckinney/rodent-removal/",
+      "geo_coordinate": "33.1976, -96.6398",
+      "keywords": {}
+    },
+    {
+      "location": "Lucas",
+      "service": "raccoon removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/lucas/raccoon-removal/",
+      "geo_coordinate": "33.1108, -96.5761",
+      "keywords": {}
+    },
+    {
+      "location": "Lucas",
+      "service": "squirrel removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/lucas/squirrel-removal/",
+      "geo_coordinate": "33.1108, -96.5761",
+      "keywords": {}
+    },
+    {
+      "location": "Lucas",
+      "service": "rodent removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/lucas/rodent-removal/",
+      "geo_coordinate": "33.1108, -96.5761",
+      "keywords": {}
+    },
+    {
+      "location": "Lavon",
+      "service": "raccoon removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/lavon/raccoon-removal/",
+      "geo_coordinate": "33.0276, -96.4342",
+      "keywords": {}
+    },
+    {
+      "location": "Lavon",
+      "service": "squirrel removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/lavon/squirrel-removal/",
+      "geo_coordinate": "33.0276, -96.4342",
+      "keywords": {}
+    },
+    {
+      "location": "Lavon",
+      "service": "rodent removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/lavon/rodent-removal/",
+      "geo_coordinate": "33.0276, -96.4342",
+      "keywords": {}
+    },
+    {
+      "location": "Farmersville",
+      "service": "raccoon removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/farmersville/raccoon-removal/",
+      "geo_coordinate": "33.1641, -96.3667",
+      "keywords": {}
+    },
+    {
+      "location": "Farmersville",
+      "service": "squirrel removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/farmersville/squirrel-removal/",
+      "geo_coordinate": "33.1641, -96.3667",
+      "keywords": {}
+    },
+    {
+      "location": "Farmersville",
+      "service": "rodent removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/farmersville/rodent-removal/",
+      "geo_coordinate": "33.1641, -96.3667",
+      "keywords": {}
+    },
+    {
+      "location": "Fairview",
+      "service": "raccoon removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/fairview/raccoon-removal/",
+      "geo_coordinate": "33.1579, -96.6317",
+      "keywords": {}
+    },
+    {
+      "location": "Fairview",
+      "service": "squirrel removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/fairview/squirrel-removal/",
+      "geo_coordinate": "33.1579, -96.6317",
+      "keywords": {}
+    },
+    {
+      "location": "Fairview",
+      "service": "rodent removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/fairview/rodent-removal/",
+      "geo_coordinate": "33.1579, -96.6317",
+      "keywords": {}
+    },
+    {
+      "location": "Celina",
+      "service": "raccoon removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/celina/raccoon-removal/",
+      "geo_coordinate": "33.3258, -96.7764",
+      "keywords": {}
+    },
+    {
+      "location": "Celina",
+      "service": "squirrel removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/celina/squirrel-removal/",
+      "geo_coordinate": "33.3258, -96.7764",
+      "keywords": {}
+    },
+    {
+      "location": "Celina",
+      "service": "rodent removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/celina/rodent-removal/",
+      "geo_coordinate": "33.3258, -96.7764",
+      "keywords": {}
+    },
+    {
+      "location": "Anna",
+      "service": "raccoon removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/anna/raccoon-removal/",
+      "geo_coordinate": "33.3490, -96.5486",
+      "keywords": {}
+    },
+    {
+      "location": "Anna",
+      "service": "squirrel removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/anna/squirrel-removal/",
+      "geo_coordinate": "33.3490, -96.5486",
+      "keywords": {}
+    },
+    {
+      "location": "Anna",
+      "service": "rodent removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/anna/rodent-removal/",
+      "geo_coordinate": "33.3490, -96.5486",
+      "keywords": {}
+    },
+    {
+      "location": "Killeen",
+      "service": "raccoon removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/killeen/raccoon-removal/",
+      "geo_coordinate": "31.1171, -97.7278",
+      "keywords": {}
+    },
+    {
+      "location": "Killeen",
+      "service": "squirrel removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/killeen/squirrel-removal/",
+      "geo_coordinate": "31.1171, -97.7278",
+      "keywords": {}
+    },
+    {
+      "location": "Killeen",
+      "service": "rodent removal",
+      "intended_url": "https://collin-county.aaacwildliferemoval.com/service-area/killeen/rodent-removal/",
+      "geo_coordinate": "31.1171, -97.7278",
+      "keywords": {}
     }
   ],
   "Rockwall": [
     {
+      "location": "Forney",
       "service": "raccoon removal",
+      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/forney/raccoon-removal/",
+      "geo_coordinate": "32.75194, -96.45583",
       "keywords": {
         "Raccoon Removal": {
           "status": "completed",
@@ -24543,7 +25770,10 @@
       }
     },
     {
+      "location": "Forney",
       "service": "squirrel removal",
+      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/forney/squirrel-removal/",
+      "geo_coordinate": "32.75194, -96.45583",
       "keywords": {
         "Squirrel Removal": {
           "status": "completed",
@@ -26170,7 +27400,10 @@
       }
     },
     {
+      "location": "Forney",
       "service": "bat removal",
+      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/forney/bat-removal/",
+      "geo_coordinate": "32.75194, -96.45583",
       "keywords": {
         "Bat Removal": {
           "status": "completed",
@@ -27501,6 +28734,195 @@
           ]
         }
       }
+    },
+    {
+      "location": "Royse City",
+      "service": "raccoon removal",
+      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/royse-city/raccoon-removal/",
+      "geo_coordinate": "32.99194, -96.29722",
+      "keywords": {}
+    },
+    {
+      "location": "Royse City",
+      "service": "squirrel removal",
+      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/royse-city/squirrel-removal/",
+      "geo_coordinate": "32.99194, -96.29722",
+      "keywords": {}
+    },
+    {
+      "location": "Royse City",
+      "service": "bat removal",
+      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/royse-city/bat-removal/",
+      "geo_coordinate": "32.99194, -96.29722",
+      "keywords": {}
+    },
+    {
+      "location": "Rockwall",
+      "service": "raccoon removal",
+      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/rockwall/raccoon-removal/",
+      "geo_coordinate": "32.91694, -96.43750",
+      "keywords": {}
+    },
+    {
+      "location": "Rockwall",
+      "service": "squirrel removal",
+      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/rockwall/squirrel-removal/",
+      "geo_coordinate": "32.91694, -96.43750",
+      "keywords": {}
+    },
+    {
+      "location": "Rockwall",
+      "service": "bat removal",
+      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/rockwall/bat-removal/",
+      "geo_coordinate": "32.91694, -96.43750",
+      "keywords": {}
+    },
+    {
+      "location": "Munson",
+      "service": "raccoon removal",
+      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/munson/raccoon-removal/",
+      "geo_coordinate": "32.89667, -96.29806",
+      "keywords": {}
+    },
+    {
+      "location": "Munson",
+      "service": "squirrel removal",
+      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/munson/squirrel-removal/",
+      "geo_coordinate": "32.89667, -96.29806",
+      "keywords": {}
+    },
+    {
+      "location": "Munson",
+      "service": "bat removal",
+      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/munson/bat-removal/",
+      "geo_coordinate": "32.89667, -96.29806",
+      "keywords": {}
+    },
+    {
+      "location": "Mobile City",
+      "service": "raccoon removal",
+      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/mobile-city/raccoon-removal/",
+      "geo_coordinate": "32.92250, -96.41083",
+      "keywords": {}
+    },
+    {
+      "location": "Mobile City",
+      "service": "squirrel removal",
+      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/mobile-city/squirrel-removal/",
+      "geo_coordinate": "32.92250, -96.41083",
+      "keywords": {}
+    },
+    {
+      "location": "Mobile City",
+      "service": "bat removal",
+      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/mobile-city/bat-removal/",
+      "geo_coordinate": "32.92250, -96.41083",
+      "keywords": {}
+    },
+    {
+      "location": "McLendon-Chisholm",
+      "service": "raccoon removal",
+      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/mclendon-chisholm/raccoon-removal/",
+      "geo_coordinate": "32.84611, -96.39000",
+      "keywords": {}
+    },
+    {
+      "location": "McLendon-Chisholm",
+      "service": "squirrel removal",
+      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/mclendon-chisholm/squirrel-removal/",
+      "geo_coordinate": "32.84611, -96.39000",
+      "keywords": {}
+    },
+    {
+      "location": "McLendon-Chisholm",
+      "service": "bat removal",
+      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/mclendon-chisholm/bat-removal/",
+      "geo_coordinate": "32.84611, -96.39000",
+      "keywords": {}
+    },
+    {
+      "location": "Heath",
+      "service": "raccoon removal",
+      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/heath/raccoon-removal/",
+      "geo_coordinate": "32.84778, -96.47833",
+      "keywords": {}
+    },
+    {
+      "location": "Heath",
+      "service": "squirrel removal",
+      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/heath/squirrel-removal/",
+      "geo_coordinate": "32.84778, -96.47833",
+      "keywords": {}
+    },
+    {
+      "location": "Heath",
+      "service": "bat removal",
+      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/heath/bat-removal/",
+      "geo_coordinate": "32.84778, -96.47833",
+      "keywords": {}
+    },
+    {
+      "location": "Glen Hill",
+      "service": "raccoon removal",
+      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/glen-hill/raccoon-removal/",
+      "geo_coordinate": "32.89472, -96.47417",
+      "keywords": {}
+    },
+    {
+      "location": "Glen Hill",
+      "service": "squirrel removal",
+      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/glen-hill/squirrel-removal/",
+      "geo_coordinate": "32.89472, -96.47417",
+      "keywords": {}
+    },
+    {
+      "location": "Glen Hill",
+      "service": "bat removal",
+      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/glen-hill/bat-removal/",
+      "geo_coordinate": "32.89472, -96.47417",
+      "keywords": {}
+    },
+    {
+      "location": "Fate",
+      "service": "raccoon removal",
+      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/fate/raccoon-removal/",
+      "geo_coordinate": "32.94139, -96.38111",
+      "keywords": {}
+    },
+    {
+      "location": "Fate",
+      "service": "squirrel removal",
+      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/fate/squirrel-removal/",
+      "geo_coordinate": "32.94139, -96.38111",
+      "keywords": {}
+    },
+    {
+      "location": "Fate",
+      "service": "bat removal",
+      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/fate/bat-removal/",
+      "geo_coordinate": "32.94139, -96.38111",
+      "keywords": {}
+    },
+    {
+      "location": "Blackland",
+      "service": "raccoon removal",
+      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/blackland/raccoon-removal/",
+      "geo_coordinate": "32.89944, -96.34944",
+      "keywords": {}
+    },
+    {
+      "location": "Blackland",
+      "service": "squirrel removal",
+      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/blackland/squirrel-removal/",
+      "geo_coordinate": "32.89944, -96.34944",
+      "keywords": {}
+    },
+    {
+      "location": "Blackland",
+      "service": "bat removal",
+      "intended_url": "https://rockwall.aaacwildliferemoval.com/service-area/blackland/bat-removal/",
+      "geo_coordinate": "32.89944, -96.34944",
+      "keywords": {}
     }
   ]
 }

@@ -35,7 +35,15 @@ async function landThePlane(dataForSeoConfig) {
       // Find existing item or create new one
       let newItem = results[location].find(existing => existing.service === service);
       if (!newItem) {
-        newItem = { service, keywords: {} };
+        // Get the original item data from takeoff to preserve all fields
+        const originalItem = items.find(item => item.service === service);
+        newItem = { 
+          location: originalItem.location,
+          service: originalItem.service,
+          intended_url: originalItem.intended_url,
+          geo_coordinate: originalItem.geo_coordinate,
+          keywords: {} 
+        };
         results[location].push(newItem);
       }
 
@@ -134,10 +142,20 @@ function loadCheckpoint(takeOffData) {
     }
   }
   
-  // Initialize empty structure matching takeoff data
+  // Initialize empty structure matching takeoff data with all required fields
   const results = {};
   for (const [location, items] of Object.entries(takeOffData)) {
     results[location] = [];
+    // Pre-populate with the structure and fields from takeoff data
+    for (const item of items) {
+      results[location].push({
+        location: item.location,
+        service: item.service,
+        intended_url: item.intended_url,
+        geo_coordinate: item.geo_coordinate,
+        keywords: {}
+      });
+    }
   }
   
   return results;
