@@ -16,10 +16,9 @@ const buildPreflight = ({ rankingPages, serviceLocationData, placeholders }) => 
       const brand = cityData.brand;
       let keywords = [];
       if (serviceObj && serviceObj.keyword_list) {
-        // Iterate through each keyword in the service's keyword_list
-        serviceObj.keyword_list.forEach(keyword => {
-          // Apply placeholder templates to each keyword
-          placeholders.forEach(template => {
+        // Apply each placeholder template to all keywords (grouped approach)
+        placeholders.forEach(template => {
+          serviceObj.keyword_list.forEach(keyword => {
             const locationKeyword = template
               .replace(/\{keyword\}/gi, keyword)
               .replace(/\{location\}/gi, item.location.toLowerCase())
