@@ -245,6 +245,12 @@ function setupRankingHeaders(sheet) {
   for (let i = 0; i < headers.length; i++) {
     sheet.getRange(1, startCol + i).setValue(headers[i]);
   }
+  
+  // Add raw response header (Column R)
+  sheet.getRange(1, 18).setValue('Raw Response Data');
+  sheet.getRange(1, 18).setFontWeight('bold');
+  sheet.getRange(1, 18).setBackground('#6c757d'); // Gray for raw data
+  sheet.getRange(1, 18).setFontColor('white');
 }
 
 /**
@@ -258,6 +264,10 @@ function writeSingleRankingResult(sheet, row, result) {
   
   // Write ranking URL (Column O)
   sheet.getRange(row, startCol + 1).setValue(result.url || 'Not Found');
+  
+  // Write raw response data (Column R)
+  const rawResponseData = result.rawResponse ? JSON.stringify(result.rawResponse, null, 2) : 'No raw data';
+  sheet.getRange(row, 18).setValue(rawResponseData); // Column R
 }
 
 /**
@@ -362,14 +372,19 @@ function checkRankingsOnly() {
           // Write failed result immediately
           writeSingleRankingResult(sheet, actualRowNumber, {
             ranking: 'Error',
-            url: 'Submission Failed'
+            url: 'Submission Failed',
+            rawResponse: 'Submission failed - no task ID returned'
           });
         }
       } catch (error) {
         console.error(`❌ Error submitting "${item.keyword}":`, error);
         failed++;
         // Write error to sheet
-        writeSingleRankingResult(sheet, actualRowNumber, { ranking: 'Error', url: error.message });
+        writeSingleRankingResult(sheet, actualRowNumber, { 
+          ranking: 'Error', 
+          url: error.message,
+          rawResponse: `Submission error: ${error.message}`
+        });
       }
     }
     
@@ -399,7 +414,8 @@ function checkRankingsOnly() {
             // Write result immediately
             writeSingleRankingResult(sheet, taskData.row, {
               ranking: bestRanking.rank,
-              url: bestRanking.url
+              url: bestRanking.url,
+              rawResponse: rankingResults.rawData
             });
             successful++;
           } else {
@@ -408,7 +424,8 @@ function checkRankingsOnly() {
             // Write result immediately
             writeSingleRankingResult(sheet, taskData.row, {
               ranking: 'Not Found',
-              url: 'Not Found'
+              url: 'Not Found',
+              rawResponse: rankingResults.rawData || 'No results found'
             });
             failed++;
           }
@@ -418,7 +435,8 @@ function checkRankingsOnly() {
           // Write result immediately
           writeSingleRankingResult(sheet, taskData.row, {
             ranking: 'Error',
-            url: 'Error'
+            url: 'Error',
+            rawResponse: `Error: ${error.message}`
           });
           failed++;
         }
