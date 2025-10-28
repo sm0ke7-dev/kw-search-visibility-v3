@@ -29,4 +29,26 @@ node dataforseo-serp.js
 
 ## Notes
 - `node_modules` and `output.json` are gitignored.
-- This repo is private and includes credentials for teammate use. 
+- This repo is private and includes credentials for teammate use.
+
+## Potential Improvements
+
+### Hybrid Keyword Generation Approach
+Combine the best features of both keyword generation implementations:
+
+**Current State:**
+- `KW_GEN.js` - Google Apps Script with full spreadsheet integration, menu-driven UI
+- `Gs-kw-script.js` - Pure function for Google Sheets formulas, flexible parameters
+
+**Proposed Hybrid:**
+- Use teammate's flexible parameter system with placeholders
+- Keep Apps Script integration for API calls and automation
+- Add 4-column output structure: [service, location, core_keyword, keyword]
+- Maintain SEO prioritization logic
+- Enable both formula use and full automation workflows
+
+**Benefits:**
+- More flexible template system
+- Better data structure for analysis
+- Reusable across different contexts
+- Maintains current automation capabilities 
