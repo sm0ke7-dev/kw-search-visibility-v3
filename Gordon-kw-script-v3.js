@@ -585,7 +585,6 @@ function testDataForSEOConnection() {
   try {
     const config = getDataForSEOConfig();
     console.log('✅ DataForSEO configuration loaded successfully');
-    console.log(`🔑 API Key: ${config.apiKey.substring(0, 10)}...`);
     console.log(`🌐 Base URL: ${config.baseUrl}`);
     
     SpreadsheetApp.getUi().alert('✅ Connection Test', 'DataForSEO connection test successful!', SpreadsheetApp.getUi().ButtonSet.OK);
@@ -601,8 +600,256 @@ function testDataForSEOConnection() {
 function onOpen() {
   const ui = SpreadsheetApp.getUi();
   ui.createMenu('🔍 Gordon KW + Rankings')
-    .addItem('Check Rankings Only (Existing Keywords)', 'checkRankingsOnly')
+    .addItem('Run Ranking Check on Sheet', 'runRankingCheckOnSheet')
+    .addItem('On-demand Check', 'checkRankingsOnly')
     .addItem('Test DataForSEO Connection', 'testDataForSEOConnection')
     .addToUi();
 }
   
+// ============================================================================
+// CONFIG SHEET HELPERS (Sheet name: "config")
+// ============================================================================
+
+function getConfigSheet() {
+  const ss = SpreadsheetApp.getActive();
+  let sheet = ss.getSheetByName('config');
+  if (!sheet) {
+    sheet = ss.insertSheet('config');
+  }
+  // Ensure headers
+  if (sheet.getLastRow() === 0) {
+    sheet.getRange(1, 1).setValue('Batch Size');
+    sheet.getRange(1, 2).setValue('Job IDs');
+    sheet.getRange(1, 3).setValue('status');
+    sheet.getRange(1, 4).setValue('submitted timestamp');
+    sheet.getRange(1, 5).setValue('completed timestamp');
+  }
+  // Default batch size at A2 if empty
+  const batchSizeCell = sheet.getRange(2, 1);
+  if (!batchSizeCell.getValue()) {
+    batchSizeCell.setValue(100); // default for testing
+  }
+  return sheet;
+}
+
+function readBatchSizeFromConfig() {
+  const cfg = getConfigSheet();
+  const val = Number(cfg.getRange(2, 1).getValue());
+  return Number.isFinite(val) && val > 0 ? Math.floor(val) : 100;
+}
+
+function getScriptProps() {
+  return PropertiesService.getScriptProperties();
+}
+
+function findTriggersByHandler(handler) {
+  return ScriptApp.getProjectTriggers().filter(t => t.getHandlerFunction() === handler);
+}
+
+function ensureSubmitTrigger() {
+  if (findTriggersByHandler('submitScheduled').length === 0) {
+    ScriptApp.newTrigger('submitScheduled').timeBased().everyMinutes(5).create();
+  }
+}
+
+function ensureFetchTrigger() {
+  if (findTriggersByHandler('fetchScheduled').length === 0) {
+    ScriptApp.newTrigger('fetchScheduled').timeBased().everyMinutes(10).create();
+  }
+}
+
+function removeTriggerByHandler(handler) {
+  const triggers = findTriggersByHandler(handler);
+  for (let i = 0; i < triggers.length; i++) {
+    ScriptApp.deleteTrigger(triggers[i]);
+  }
+}
+
+// ============================================================================
+// SUBMIT PHASE (writes to config: Job ID, status=submitted, submitted timestamp)
+// ============================================================================
+
+function submitScheduled() {
+  const sheet = SpreadsheetApp.getActiveSheet();
+  const cfg = getConfigSheet();
+
+  // Read input data from Sheet1 (K,L,M)
+  const lastRow = sheet.getLastRow();
+  if (lastRow < 2) {
+    SpreadsheetApp.getUi().alert('❌ No Data', 'No data found in the sheet.', SpreadsheetApp.getUi().ButtonSet.OK);
+    return;
+  }
+
+  const dataRange = sheet.getRange(2, 11, lastRow - 1, 3); // K,L,M
+  const data = dataRange.getValues();
+
+  // Use a moving cursor to avoid resubmitting the same rows across runs
+  const props = getScriptProps();
+  let cursor = Number(props.getProperty('v3_submit_cursor') || '2');
+  if (!Number.isFinite(cursor) || cursor < 2) cursor = 2;
+
+  const items = [];
+  let scanRow = cursor;
+  while (scanRow <= lastRow && items.length < 2000) { // hard cap safety
+    const idx = scanRow - 2;
+    const keyword = data[idx] ? data[idx][0] : '';
+    const lat = data[idx] ? data[idx][1] : '';
+    const lng = data[idx] ? data[idx][2] : '';
+    if (keyword && lat && lng && !hasRankingData(sheet, scanRow)) {
+      items.push({ keyword: String(keyword).trim(), lat: Number(lat), lng: Number(lng), row: scanRow });
+    }
+    scanRow++;
+  }
+  if (items.length === 0) {
+    // No more rows to submit → remove submit trigger if present
+    removeTriggerByHandler('submitScheduled');
+    props.deleteProperty('v3_submit_cursor');
+    SpreadsheetApp.getUi().alert('✅ Nothing to submit', 'All rows appear completed or previously submitted.', SpreadsheetApp.getUi().ButtonSet.OK);
+    return;
+  }
+
+  const batchSize = readBatchSizeFromConfig();
+  const toSubmit = items.slice(0, batchSize);
+  console.log(`📤 Submitting ${toSubmit.length} keywords (batch size ${batchSize})`);
+
+  let taskIds = submitBatchRankingJobs(toSubmit);
+  if (!taskIds || taskIds.length === 0) {
+    SpreadsheetApp.getUi().alert('❌ Submit Failed', 'No task IDs returned from DataForSEO.', SpreadsheetApp.getUi().ButtonSet.OK);
+    return;
+  }
+
+  // Write to config rows B/C/D
+  const now = new Date();
+  const rows = taskIds.length;
+  const startWriteRow = cfg.getLastRow() >= 2 ? cfg.getLastRow() + 1 : 2;
+  const out = [];
+  for (let i = 0; i < rows; i++) {
+    out.push([taskIds[i], 'submitted', now, '']);
+  }
+  // B..E where B=Job IDs, C=status, D=submitted timestamp, E=completed timestamp
+  cfg.getRange(startWriteRow, 2, rows, 4).setValues(out);
+
+  // Advance cursor
+  const lastSubmittedRow = toSubmit[toSubmit.length - 1].row;
+  const nextCursor = lastSubmittedRow + 1;
+  if (nextCursor > lastRow) {
+    props.deleteProperty('v3_submit_cursor');
+    // No more rows to submit; remove submit trigger
+    removeTriggerByHandler('submitScheduled');
+  } else {
+    props.setProperty('v3_submit_cursor', String(nextCursor));
+    ensureSubmitTrigger(); // keep it running until we reach the end
+  }
+
+  SpreadsheetApp.getUi().alert('✅ Submitted', `Submitted ${rows} tasks. Status written to config sheet.`, SpreadsheetApp.getUi().ButtonSet.OK);
+}
+
+// ============================================================================
+// FETCH PHASE (reads config, fetches ready tasks, writes to Sheet1 N/O/P)
+// ============================================================================
+
+function fetchScheduled() {
+  const sheet = SpreadsheetApp.getActiveSheet();
+  const cfg = getConfigSheet();
+
+  const lastRow = cfg.getLastRow();
+  if (lastRow < 2) {
+    SpreadsheetApp.getUi().alert('❌ No Tasks', 'No submitted tasks found in config.', SpreadsheetApp.getUi().ButtonSet.OK);
+    return;
+  }
+
+  const rows = cfg.getRange(2, 2, lastRow - 1, 4).getValues(); // B..E
+  let fetched = 0;
+  let pending = 0;
+  let totalConsidered = 0;
+  for (let i = 0; i < rows.length; i++) {
+    const taskId = rows[i][0];
+    const status = rows[i][1];
+    const completedAt = rows[i][3];
+    if (!taskId) continue;
+    if (status === 'fetched' && completedAt) continue; // already done
+    totalConsidered++;
+
+    const res = fetchKeywordRankingResults(taskId);
+    if (res && res.rankings && res.rankings.length > 0) {
+      const best = res.rankings.reduce((b, c) => (c.rank < b.rank ? c : b));
+
+      // Try to identify the keyword from raw data to locate the row in Sheet1
+      let kw = '';
+      if (res.rawData && res.rawData.data && res.rawData.data.keyword) kw = String(res.rawData.data.keyword).trim();
+      else if (res.rawData && res.rawData.result && res.rawData.result[0] && res.rawData.result[0].keyword) kw = String(res.rawData.result[0].keyword).trim();
+
+      let targetRow = -1;
+      if (kw) {
+        const kwRange = sheet.getRange(2, 11, sheet.getLastRow() - 1, 1).getValues(); // K
+        for (let r = 0; r < kwRange.length; r++) {
+          const cellKw = String(kwRange[r][0] || '').trim();
+          if (cellKw === kw && !hasRankingData(sheet, r + 2)) {
+            targetRow = r + 2;
+            break;
+          }
+        }
+      }
+      // Fallback: if not found, attempt first empty N/O
+      if (targetRow === -1) {
+        for (let r = 2; r <= sheet.getLastRow(); r++) {
+          if (!hasRankingData(sheet, r)) { targetRow = r; break; }
+        }
+      }
+      if (targetRow !== -1) {
+        writeSingleRankingResult(sheet, targetRow, {
+          ranking: best.rank,
+          url: best.url,
+          rawResponse: res.rawData
+        });
+        cfg.getRange(i + 2, 3).setValue('fetched'); // C
+        cfg.getRange(i + 2, 5).setValue(new Date()); // E
+        fetched++;
+      } else {
+        cfg.getRange(i + 2, 3).setValue('pending');
+        pending++;
+      }
+    } else {
+      cfg.getRange(i + 2, 3).setValue('pending'); // keep waiting
+      pending++;
+    }
+  }
+
+  SpreadsheetApp.getUi().alert('ℹ️ Fetch Complete', `Fetched: ${fetched}\nPending: ${pending}`, SpreadsheetApp.getUi().ButtonSet.OK);
+
+  // If there is nothing left to fetch, remove the fetch trigger
+  if (pending === 0 && totalConsidered === 0) {
+    removeTriggerByHandler('fetchScheduled');
+  } else {
+    ensureFetchTrigger();
+  }
+}
+
+// ============================================================================
+// TRIGGER HELPERS (manual creation, every 30 minutes)
+// ============================================================================
+
+function createFetchTrigger() {
+  // Remove existing fetch triggers
+  const triggers = ScriptApp.getProjectTriggers();
+  for (let i = 0; i < triggers.length; i++) {
+    if (triggers[i].getHandlerFunction() === 'fetchScheduled') {
+      ScriptApp.deleteTrigger(triggers[i]);
+    }
+  }
+  ScriptApp.newTrigger('fetchScheduled').timeBased().everyMinutes(10).create();
+  SpreadsheetApp.getUi().alert('✅ Trigger Created', 'Fetch trigger set to run every 10 minutes.', SpreadsheetApp.getUi().ButtonSet.OK);
+}
+
+// ============================================================================
+// ORCHESTRATOR ENTRY POINT
+// ============================================================================
+
+function runRankingCheckOnSheet() {
+  // Kick off first batch immediately
+  submitScheduled();
+  // Ensure periodic triggers are in place
+  ensureSubmitTrigger();
+  ensureFetchTrigger();
+  SpreadsheetApp.getUi().alert('🚀 Scheduler Running', 'Submission and 10-min fetch schedulers are active. You can close the sheet; they will auto-stop when finished.', SpreadsheetApp.getUi().ButtonSet.OK);
+}
