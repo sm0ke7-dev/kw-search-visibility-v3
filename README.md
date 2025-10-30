@@ -18,17 +18,19 @@ A comprehensive keyword generation and ranking tracking system using Google Apps
 - **Raw response data** for comprehensive auditing
 - **Skip logic** for already processed keywords
 
-### Automated Scheduling (v3)
-- **Config-driven batch processing** with configurable batch sizes
-- **Separate config sheet** for task tracking and status management
-- **Automated triggers** for submission and fetching phases
-- **Resume capability** across multiple runs
+### Automated Scheduling (v3.1)
+- **Config-driven batch processing** via `config!A2` (default 100)
+- **Independent triggers**: submit every 5 min, fetch every 10 min
+- **Headless operation** (installable triggers; sheet need not be open)
+- **Status UX**: toasts + live status in `kw_variants!N1`
+- **Resume capability** across multiple runs (submit cursor + dedupe)
 - **Scalable processing** for up to 4,000 keywords
 
 ## 📁 File Structure
 
 ### Core Scripts
-- `Gordon-kw-script-v3.js` - **NEW** Automated scheduling script with config sheet
+- `Gordon-kw-script-v3.1.js` - Automated scheduling with live status and scan optimizations
+- `Gordon-kw-script-v3.js` - Earlier scheduler version (modal alerts)
 - `Gordon-kw-script-v2.js` - Main ranking tracking script (500-keyword batches)
 - `Gordon-kw-script-v1.js` - Backup version
 - `KW_GEN_PLUS_KW_RANKING.js` - Original keyword generation + ranking script
@@ -42,7 +44,7 @@ A comprehensive keyword generation and ranking tracking system using Google Apps
 
 ### Google Apps Script Setup
 1. Create a new Google Apps Script project
-2. Copy `Gordon-kw-script-v3.js` content (recommended) or `Gordon-kw-script-v2.js` for manual processing
+2. Copy `Gordon-kw-script-v3.1.js` content (recommended) or `Gordon-kw-script-v2.js` for manual processing
 3. Add DataForSEO API key to Script Properties:
    - Key: `basic`
    - Value: Your DataForSEO API key
@@ -51,7 +53,7 @@ A comprehensive keyword generation and ranking tracking system using Google Apps
 - **API Endpoint**: `/v3/serp/google/organic`
 - **Batch Size**: Configurable in config sheet (default: 100)
 - **Depth**: 30 results (3 pages) per keyword
-- **Wait Time**: 5 minutes per batch (v2) / 10 minutes fetch interval (v3)
+- **Wait/Intervals**: v2 waits 5 minutes per batch; v3.1 runs submit every 5 min and fetch every 10 min
 - **Retries**: 8 attempts for queued tasks
 
 ## 📊 Column Mapping
@@ -62,9 +64,8 @@ A comprehensive keyword generation and ranking tracking system using Google Apps
 - **Column M**: Longitude coordinates
 
 ### Output Data (Sheet1)
-- **Column N**: Ranking Position
-- **Column O**: Ranking URL
-- **Column P**: Raw Response Data (JSON)
+- v2: **Column N** Ranking Position, **Column O** Ranking URL, **Column P** Raw Response (JSON)
+- v3.1: appended to `ranking_results` → **A** Position, **B** URL, **C** Raw, **D** Keyword
 
 ### Config Sheet (v3)
 - **Column A**: Batch Size (configurable, default: 100)
@@ -88,16 +89,17 @@ A comprehensive keyword generation and ranking tracking system using Google Apps
 
 ## 🎯 Usage
 
-### v3 - Automated Scheduling (Recommended)
+### v3.1 - Automated Scheduling (Recommended)
 1. Open Google Sheets with your keyword data
 2. Go to **🔍 Gordon KW + Rankings** menu
 3. Select **"Run Ranking Check on Sheet"**
 4. Script automatically:
    - Submits batches every 5 minutes
    - Fetches results every 10 minutes
-   - Writes status to config sheet
-   - Auto-stops when complete
-5. Monitor progress in config sheet
+   - Writes live status to `kw_variants!N1` and task states to `config`
+   - Auto-stops each trigger when complete
+5. Monitor progress in `config` and results in `ranking_results`
+6. Optional: create a time-driven trigger for `runRankingCheckOnSheet` every 2 weeks for hands-off runs
 
 ### v2 - Manual Processing
 1. Open Google Sheets with your keyword data
@@ -110,17 +112,17 @@ A comprehensive keyword generation and ranking tracking system using Google Apps
 - Script automatically skips already processed keywords
 - Safe to stop and restart at any time
 - No data loss on interruption
-- Config sheet tracks all task statuses
+- Config sheet tracks all task statuses; submit cursor stored in Script Properties
 
 ## 📈 Recent Updates
 
-### v3.0 Features (NEW)
-- ✅ **Automated scheduling** with config-driven batch processing
-- ✅ **Separate config sheet** for task tracking and status management
-- ✅ **Scalable processing** for up to 4,000 keywords
-- ✅ **Auto-trigger management** (creates and removes triggers automatically)
-- ✅ **Resume capability** across multiple runs
-- ✅ **Configurable batch sizes** via config sheet
+### v3.1 Highlights (NEW)
+- ✅ Automated submit/fetch triggers (5/10 min) running independently
+- ✅ Headless execution; results appear without opening the sheet
+- ✅ Live status in `kw_variants!N1` + toasts; optional start modal for editor runs
+- ✅ Config-driven batch size (`config!A2`)
+- ✅ Optimized scanning for large sheets (reads `ranking_results!D` once)
+- ✅ Idempotent writes to `ranking_results`
 
 ### v2.0 Features
 - ✅ 500-keyword batch processing
@@ -144,14 +146,14 @@ A comprehensive keyword generation and ranking tracking system using Google Apps
 - **"Task In Queue"**: Normal - script will retry automatically
 - **No results written**: Check column mapping and API key
 - **Script timeout**: Reduce batch size or wait time
-- **Triggers not running**: Check Apps Script Triggers page
+- **Triggers not running**: Check Apps Script Triggers page; ensure installable time-driven triggers exist
 - **Config sheet missing**: Script auto-creates on first run
 
 ### Debug Information
 - Check execution logs for detailed progress
 - Raw response data in Column P for API debugging
 - Progress updates in Column L during processing (v2)
-- Status tracking in config sheet (v3)
+- Live status in `kw_variants!N1` and task tracking in `config` (v3.1)
 - Apps Script Triggers page shows active automation
 
 ## 📝 Notes
