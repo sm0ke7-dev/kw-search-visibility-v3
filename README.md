@@ -18,17 +18,22 @@ A comprehensive keyword generation and ranking tracking system using Google Apps
 - **Raw response data** for comprehensive auditing
 - **Skip logic** for already processed keywords
 
-### Automated Scheduling (v3.1)
-- **Config-driven batch processing** via `config!A2` (default 100)
+### Automated Scheduling (v3.2)
+- **Config-driven batch processing** via `config!A2` (default 50)
 - **Independent triggers**: submit every 5 min, fetch every 10 min
 - **Headless operation** (installable triggers; sheet need not be open)
 - **Status UX**: toasts + live status in `kw_variants!N1`
 - **Resume capability** across multiple runs (submit cursor + dedupe)
 - **Scalable processing** for up to 4,000 keywords
+- **Sequence preservation**: Results maintain original keyword order from `kw_variants`
+- **Keyword tracking in config**: Job IDs include keyword column for easy auditing
+- **Pending placeholders**: Shows which keywords are waiting for results
+- **Overwrite protection**: Automatically overwrites old data and "Pending" placeholders
 
 ## 📁 File Structure
 
 ### Core Scripts
+- `Gordon-kw-script-v3.2.js` - **Latest**: Sequence-preserving scheduling with keyword tracking (recommended)
 - `Gordon-kw-script-v3.1.js` - Automated scheduling with live status and scan optimizations
 - `Gordon-kw-script-v3.js` - Earlier scheduler version (modal alerts)
 - `Gordon-kw-script-v2.js` - Main ranking tracking script (500-keyword batches)
@@ -44,16 +49,16 @@ A comprehensive keyword generation and ranking tracking system using Google Apps
 
 ### Google Apps Script Setup
 1. Create a new Google Apps Script project
-2. Copy `Gordon-kw-script-v3.1.js` content (recommended) or `Gordon-kw-script-v2.js` for manual processing
+2. Copy `Gordon-kw-script-v3.2.js` content (recommended) or `Gordon-kw-script-v2.js` for manual processing
 3. Add DataForSEO API key to Script Properties:
    - Key: `basic`
    - Value: Your DataForSEO API key
 
 ### DataForSEO Configuration
 - **API Endpoint**: `/v3/serp/google/organic`
-- **Batch Size**: Configurable in config sheet (default: 100)
+- **Batch Size**: Configurable in config sheet (default: 50)
 - **Depth**: 30 results (3 pages) per keyword
-- **Wait/Intervals**: v2 waits 5 minutes per batch; v3.1 runs submit every 5 min and fetch every 10 min
+- **Wait/Intervals**: v2 waits 5 minutes per batch; v3.2 runs submit every 5 min and fetch every 10 min
 - **Retries**: 8 attempts for queued tasks
 
 ## 📊 Column Mapping
@@ -63,24 +68,27 @@ A comprehensive keyword generation and ranking tracking system using Google Apps
 - **Column L**: Latitude coordinates
 - **Column M**: Longitude coordinates
 
-### Output Data (Sheet1)
+### Output Data
 - v2: **Column N** Ranking Position, **Column O** Ranking URL, **Column P** Raw Response (JSON)
 - v3.1: appended to `ranking_results` → **A** Position, **B** URL, **C** Raw, **D** Keyword
+- v3.2: appended to `ranking_results` → **A** Position, **B** URL, **C** Keyword (raw response removed for performance)
 
-### Config Sheet (v3)
-- **Column A**: Batch Size (configurable, default: 100)
+### Config Sheet (v3.2)
+- **Column A**: Batch Size (configurable, default: 50)
 - **Column B**: Job IDs (DataForSEO task IDs)
-- **Column C**: Status (submitted/pending/fetched/error)
-- **Column D**: Submitted Timestamp
-- **Column E**: Completed Timestamp
+- **Column C**: Keyword (for easy auditing)
+- **Column D**: Source Row (original row number from kw_variants)
+- **Column E**: Status (submitted/pending/fetched/error)
+- **Column F**: Submitted Timestamp
+- **Column G**: Completed Timestamp
 
 ## ⚡ Performance
 
 ### Batch Processing
-- **100 keywords per batch** (optimized for reliability)
+- **50 keywords per batch** (default, configurable in `config!A2`)
 - **5-minute wait time** per batch
 - **Up to 8 retries** for queued tasks
-- **Real-time progress updates** in Column L
+- **Real-time progress updates** in `kw_variants!N1`
 
 ### Cost Optimization
 - **30 results per keyword** (vs 100 default)
@@ -89,7 +97,7 @@ A comprehensive keyword generation and ranking tracking system using Google Apps
 
 ## 🎯 Usage
 
-### v3.1 - Automated Scheduling (Recommended)
+### v3.2 - Automated Scheduling (Recommended)
 1. Open Google Sheets with your keyword data
 2. Go to **🔍 Gordon KW + Rankings** menu
 3. Select **"Run Ranking Check on Sheet"**
@@ -97,9 +105,13 @@ A comprehensive keyword generation and ranking tracking system using Google Apps
    - Submits batches every 5 minutes
    - Fetches results every 10 minutes
    - Writes live status to `kw_variants!N1` and task states to `config`
+   - Maintains keyword sequence in `ranking_results` (matches `kw_variants` row order)
    - Auto-stops each trigger when complete
 5. Monitor progress in `config` and results in `ranking_results`
-6. Optional: create a time-driven trigger for `runRankingCheckOnSheet` every 2 weeks for hands-off runs
+6. **Menu Options**:
+   - **🛑 Stop All Schedulers**: Stops all running triggers
+   - **🔄 Reset Submit Cursor**: Resets to start from row 2
+7. Optional: create a time-driven trigger for `runRankingCheckOnSheet` every 2 weeks for hands-off runs
 
 ### v2 - Manual Processing
 1. Open Google Sheets with your keyword data
@@ -116,7 +128,23 @@ A comprehensive keyword generation and ranking tracking system using Google Apps
 
 ## 📈 Recent Updates
 
-### v3.1 Highlights (NEW)
+### v3.2 Highlights (NEW)
+- ✅ **Sequence preservation**: Results maintain original keyword order from `kw_variants` column K
+- ✅ **Keyword column in config**: Job IDs now include keyword for easy auditing
+- ✅ **Source row tracking**: Config sheet stores original row number for sequence alignment
+- ✅ **Pending placeholders**: Shows which keywords are waiting for results
+- ✅ **Overwrite protection**: Automatically overwrites old data and "Pending" placeholders
+- ✅ **Raw response removed**: Improved performance by removing large JSON data from results
+- ✅ **Menu controls**: Stop schedulers and reset cursor from menu
+- ✅ **Default batch size**: Reduced to 50 (was 100)
+- ✅ Automated submit/fetch triggers (5/10 min) running independently
+- ✅ Headless execution; results appear without opening the sheet
+- ✅ Live status in `kw_variants!N1` + toasts
+- ✅ Config-driven batch size (`config!A2`)
+- ✅ Optimized scanning for large sheets (reads `ranking_results!C` once)
+- ✅ Idempotent writes to `ranking_results`
+
+### v3.1 Highlights
 - ✅ Automated submit/fetch triggers (5/10 min) running independently
 - ✅ Headless execution; results appear without opening the sheet
 - ✅ Live status in `kw_variants!N1` + toasts; optional start modal for editor runs
